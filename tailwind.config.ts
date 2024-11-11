@@ -50,10 +50,13 @@ const config: Config = {
         inner: 'inset -2px -4px 0px 0px '
       },
       backgroundImage: {
+        'about-pattern': "url('https://res.cloudinary.com/michasaportfolio/image/upload/v1730911237/pattern_h02tvc.svg')",
         'skills-pattern': "url('/images/skills/pattern.svg')",
         'contact-pattern': "url('/images/contact/pattern.svg')",
         'hero-hidden': "url('https://res.cloudinary.com/michasaportfolio/image/upload/v1730927902/pattern_qlxyqg.svg')",
-        'hero-bg': "url('https://res.cloudinary.com/michasaportfolio/image/upload/v1730928204/background_fpx9rj.svg'"
+        'hero-bg': "url('https://res.cloudinary.com/michasaportfolio/image/upload/v1730928204/background_fpx9rj.svg'",
+        'work-pattern': "url('https://res.cloudinary.com/michasaportfolio/image/upload/v1730911301/pattern_cbhxxo.svg')"
+
       },
       animation: {
         'sideswipe-right-in': 'sideswipeRightIn 0.5s linear forwards',
@@ -61,8 +64,8 @@ const config: Config = {
         'sideswipe-left-in': 'sideswipeLeftIn 0.5s linear forwards',
         'sideswipe-left-out': 'sideswipeLeftOut 0.5s linear forwards',
         'sideswipe-top-in': 'sideswipeTopIn 0.2s linear forwards',
-        'marquee': 'marquee 10s linear infinite',
-        'l21': 'l21 2s infinite linear',
+        marquee: 'marquee 10s linear infinite',
+        'tilt': 'tilt 1s ease-in-out infinite',
       },
       keyframes: {
         'marquee': {
@@ -89,11 +92,11 @@ const config: Config = {
           '0%': { transform: 'translateY(-100%)', },
           '100%': { transform: 'translateY(0)' },
         },
-        'l21': {
-          '100%': {
-            backgroundPosition: 'left'
-          }
-        },
+
+        tilt: {
+          '0%, 100%': { transform: 'rotate(-5deg)' },
+          '50%': { transform: 'rotate(5deg)' },
+        }
       }
     },
   },
