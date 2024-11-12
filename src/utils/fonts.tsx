@@ -21,8 +21,3 @@ export const garden_delight = localFont({
   src: "../../public/fonts/garden-delight.woff2",
   variable: "--font-garden_delight",
 });
-
-export const alondra_drawn = localFont({
-  src: "../../public/fonts/CSAlondraDrawn-Regular_demo.woff2",
-  variable: "--font-alondra_drawn",
-});

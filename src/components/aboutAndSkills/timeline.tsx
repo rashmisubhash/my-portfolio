@@ -86,7 +86,7 @@ const TimelineItem = ({
               >
                 {title}
                 {role && (
-                  <span className="m-0 block text-center font-alondra_drawn font-bold md:inline-block md:text-lg">
+                  <span className="m-0 block text-center font-sans font-bold md:inline-block md:text-lg">
                     {role}
                   </span>
                 )}

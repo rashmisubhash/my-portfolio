@@ -45,7 +45,7 @@ const StoryCorner = ({
           }}
         />
         <div
-          className="prose isolate z-1 max-w-none overflow-x-hidden rounded-md bg-white px-4 py-1 scrollbar scrollbar-track-not-black/40 scrollbar-thumb-not-black/80 *:my-2 *:text-pretty *:text-justify *:text-[15px] max-lg:max-h-60 *:md:text-base lg:max-h-64"
+          className="prose isolate z-1 mx-2 max-w-none overflow-x-hidden rounded-md bg-white px-4 py-1 scrollbar scrollbar-track-not-black/40 scrollbar-thumb-not-black/80 *:my-2 *:text-pretty *:text-justify *:text-[15px] max-lg:max-h-60 *:md:text-base lg:max-h-64"
           tabIndex={0}
           dangerouslySetInnerHTML={{
             __html: marked.parse(data[0].content) as string,
@@ -71,7 +71,7 @@ const StoryCorner = ({
         />
 
         <div
-          className="prose max-w-none overflow-x-hidden overflow-y-scroll rounded-md bg-white/80 px-4 py-1 scrollbar scrollbar-track-not-black/40 scrollbar-thumb-not-black/80 *:my-2 *:text-pretty *:text-justify *:text-[15px] max-lg:max-h-60 *:md:text-base lg:max-h-64"
+          className="prose mx-4 max-w-none overflow-x-hidden overflow-y-scroll rounded-md bg-white/80 px-2 py-1 scrollbar scrollbar-track-not-black/40 scrollbar-thumb-not-black/80 *:my-2 *:text-pretty *:text-justify *:text-[15px] max-lg:max-h-60 *:md:text-base lg:max-h-64"
           tabIndex={0}
           dangerouslySetInnerHTML={{
             __html: marked.parse(data[1].content) as string,

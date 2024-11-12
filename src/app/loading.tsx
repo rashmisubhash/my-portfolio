@@ -16,7 +16,7 @@ const Loading = () => {
           alt="chellscript.dev clamshell logo"
           className="my-4 self-center bg-transparent"
         />{" "}
-        <p aria-label="Loading..." className="loader bg-white text-black" />
+        <p aria-label="Loading..." className="loader" />
       </div>
     </div>
   );

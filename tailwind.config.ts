@@ -40,7 +40,6 @@ const config: Config = {
         homevideo: ['var(--font-homevideo)'],
         blacker: ['var(--font-blacker)'],
         garden_delight: ['var(--font-garden_delight)'],
-        alondra_drawn: ['var(--font-alondra_drawn)'],
       },
       boxShadow: {
         DEFAULT: '3px 2px 0px',

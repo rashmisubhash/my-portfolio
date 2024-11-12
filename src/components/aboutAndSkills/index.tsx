@@ -68,7 +68,7 @@ const AboutMe = ({ data }: { data: AboutSectionProps }) => {
             className={clsx(
               "col-start-1 row-start-3 max-md:h-fit md:col-span-full md:col-start-1 md:row-start-2",
               activeSlide == 0
-                ? "max-md:animate-sideswipe-left"
+                ? "max-md:animate-sideswipe-left-in"
                 : "max-md:hidden max-md:animate-sideswipe-left-out md:animate-[initial]",
             )}
           >
@@ -78,7 +78,7 @@ const AboutMe = ({ data }: { data: AboutSectionProps }) => {
             className={clsx(
               "col-start-1 row-start-3 max-md:w-full md:col-span-full md:row-start-3",
               activeSlide == 1
-                ? "max-md:animate-sideswipe-right"
+                ? "max-md:animate-sideswipe-right-in"
                 : "max-md:hidden max-md:animate-sideswipe-right-out",
             )}
           >

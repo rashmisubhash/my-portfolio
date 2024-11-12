@@ -13,7 +13,9 @@ const LazyProjectDisplay = dynamic<{
   companyData: PreviousWorkSectionProps["companies"]["list"][number];
   projectData: ProjectsListProps;
   setSelectedProjectIndex: (arg: null) => void;
-}>(() => import("./display"));
+}>(() => import("./display"), {
+  loading: () => <p aria-label="Loading..." className="loader" />,
+});
 
 const Work = ({ data }: { data: PreviousWorkSectionProps }) => {
   const {

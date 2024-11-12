@@ -106,7 +106,7 @@
   }
 
   .subline {
-    @apply text-center font-alondra_drawn text-xl text-not-black max-md:text-center md:text-3xl;
+    @apply text-center font-sans text-xl text-not-black max-md:text-center md:text-3xl;
   }
 
   .timeline-dot::after {
