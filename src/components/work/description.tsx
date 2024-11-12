@@ -12,8 +12,9 @@ const ProjectDescription = ({
   companyData: { companyTitle, duration, role },
   projectData: { techUsed, name, description, externalLink, githubLink },
 }: ProjectDescriptionProps) => {
-  const descriptionHTML = marked.parse(description as string);
-  const techUsedHTML = `<div class="sr-only"><h3>Tech Used:</h3>${techUsed}</div>`; //for a11y
+  const descriptionHTML = description && marked.parse(description as string);
+  const techUsedHTML =
+    techUsed && `<div class="sr-only"><h3>Tech Used:</h3>${techUsed}</div>`; //for a11y
 
   const combinedHTML = `${descriptionHTML} ${techUsedHTML}`;
 
