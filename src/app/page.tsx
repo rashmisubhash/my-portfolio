@@ -5,28 +5,22 @@ import Contact from "../components/contact";
 import { Metadata } from "next";
 import getCopyData, { ReturnedResponse } from "../utils/getCopyData";
 
-const baseUrl =
-  process.env.NODE_ENV === "production"
-    ? `${process.env.SITE_URL}`
-    : "http://localhost:3000";
+const DESCRIPTION =
+  "Serving Sass.css and servers 💁🏾‍♀️✨. Hi, I'm Michi — a Front-End Developer & User-Empathy Enthusiast. Crafting smooth, intuitive, and accessible websites. Welcome to My Developer Portfolio Site";
 
 export const metadata: Metadata = {
   title: "ChellScript",
-  metadataBase: new URL(baseUrl),
-  description:
-    "Portfolio site for the Front-End Dev with user empathy superpowers. I create intuitive, enjoyable and accessible experiences that actually make sense, especially for humans that use them.",
+  description: DESCRIPTION,
   openGraph: {
     type: "website",
     url: `${process.env.SITE_URL}`,
     title: "ChellScript",
-    description:
-      "Portfolio site for the Front-End Dev with user empathy superpowers. I create intuitive, enjoyable and accessible experiences that actually make sense, especially for humans that use them.",
+    description: DESCRIPTION,
   },
   twitter: {
     title: "ChellScript",
     card: "summary_large_image",
-    description:
-      "Portfolio site for the Front-End Dev with user empathy superpowers. I create intuitive, enjoyable and accessible experiences that actually make sense, especially for humans that use them.",
+    description: DESCRIPTION,
   },
 };
 
