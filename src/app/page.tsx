@@ -5,13 +5,19 @@ import Contact from "../components/contact";
 import { Metadata } from "next";
 import getCopyData, { ReturnedResponse } from "../utils/getCopyData";
 
+const baseUrl =
+  process.env.NODE_ENV === "production"
+    ? `${process.env.SITE_URL}`
+    : "http://localhost:3000";
+
 export const metadata: Metadata = {
   title: "ChellScript",
+  metadataBase: new URL(baseUrl),
   description:
     "Portfolio site for the Front-End Dev with user empathy superpowers. I create intuitive, enjoyable and accessible experiences that actually make sense, especially for humans that use them.",
   openGraph: {
     type: "website",
-    url: "https://chellscript.dev",
+    url: `${process.env.SITE_URL}`,
     title: "ChellScript",
     description:
       "Portfolio site for the Front-End Dev with user empathy superpowers. I create intuitive, enjoyable and accessible experiences that actually make sense, especially for humans that use them.",
