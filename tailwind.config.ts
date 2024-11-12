@@ -64,7 +64,8 @@ const config: Config = {
         'sideswipe-left-in': 'sideswipeLeftIn 0.5s linear forwards',
         'sideswipe-left-out': 'sideswipeLeftOut 0.5s linear forwards',
         'sideswipe-top-in': 'sideswipeTopIn 0.2s linear forwards',
-        marquee: 'marquee 10s linear infinite',
+        'marquee': 'marquee 10s linear infinite',
+        'l21': 'l21 2s infinite linear',
         'tilt': 'tilt 1s ease-in-out infinite',
       },
       keyframes: {
@@ -92,7 +93,11 @@ const config: Config = {
           '0%': { transform: 'translateY(-100%)', },
           '100%': { transform: 'translateY(0)' },
         },
-
+        'l21': {
+          '100%': {
+            backgroundPosition: 'left'
+          }
+        },
         tilt: {
           '0%, 100%': { transform: 'rotate(-5deg)' },
           '50%': { transform: 'rotate(5deg)' },

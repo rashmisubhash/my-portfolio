@@ -120,4 +120,14 @@
   .brick {
     @apply border border-not-black px-3 py-1 text-xl leading-loose md:text-2xl;
   }
+
+  .loader {
+    @apply animate-l21 relative inline-block font-mono text-2xl font-bold before:content-['Loading...'] md:text-4xl;
+    background: linear-gradient(90deg, #2c3e50 50%, #0000 0) right/200% 100%;
+  }
+
+  .loader::before {
+    @apply bg-gradient-to-r from-white to-transparent bg-clip-text p-2 px-1 font-homevideo text-transparent text-white;
+    background-image: linear-gradient(90deg, #fff 50%, #2c3e50 0);
+  }
 }

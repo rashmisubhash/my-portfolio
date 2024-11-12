@@ -10,8 +10,8 @@ import {
   garden_delight,
 } from "../utils/fonts";
 import { Analytics } from "@vercel/analytics/react";
-import NavBar from "../components/navBar";
-import Footer from "../components/footer";
+// import NavBar from "../components/navBar";
+// import Footer from "../components/footer";
 import getCopyData from "../utils/getCopyData";
 import ErrorUI from "../components/errorUI";
 
@@ -34,9 +34,9 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
           <ErrorUI />
         ) : (
           <>
-            <NavBar data={data.navigation} />
+            {/* <NavBar data={data.navigation} /> */}
             {children}
-            <Footer data={data.footer} />
+            {/* <Footer data={data.footer} /> */}
             <Analytics />
           </>
         )}
