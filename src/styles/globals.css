@@ -86,7 +86,7 @@
   }
 
   .description-link {
-    @apply font-medium underline decoration-brand-yellow decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out hover:font-bold;
+    @apply break-all font-medium underline decoration-brand-yellow decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out hover:font-bold;
   }
 
   .max-app-width {
@@ -118,11 +118,11 @@
   }
 
   .brick {
-    @apply border border-not-black px-3 py-1 text-xl leading-loose md:text-2xl;
+    @apply border border-not-black px-3 py-1 text-lg leading-loose md:text-2xl;
   }
 
   .loader {
-    @apply animate-l21 relative inline-block font-mono text-2xl font-bold before:content-['Loading...'] md:text-4xl;
+    @apply relative inline-block animate-l21 font-mono text-2xl font-bold before:content-['Loading...'] md:text-4xl;
     background: linear-gradient(90deg, #2c3e50 50%, #0000 0) right/200% 100%;
   }
 

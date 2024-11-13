@@ -21,7 +21,7 @@ const SkillBricks = ({ data }: { data: AboutSectionProps["skills"] }) => {
           width={300}
           src={michiBuilder}
           className="m-0 object-cover max-lg:hidden lg:max-w-[400px]"
-          alt="Michi in a construction outfit holding a brick"
+          alt="Michi in a construction outfit"
         />{" "}
         <div aria-describedby="skills" className="sr-only">
           {data}
@@ -32,7 +32,7 @@ const SkillBricks = ({ data }: { data: AboutSectionProps["skills"] }) => {
         >
           {dataArray.map((skill, index) => (
             <span
-              className="brick flex-1 content-center whitespace-nowrap border-2 border-red-950/30 bg-red-400 text-center font-homevideo text-lg text-red-950 md:text-xl lg:text-2xl"
+              className="brick flex-1 content-center whitespace-nowrap border-2 border-red-950/30 bg-red-400 text-center font-homevideo text-lg text-red-950"
               key={index}
             >
               {skill}
