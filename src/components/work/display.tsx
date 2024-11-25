@@ -19,7 +19,7 @@ const ProjectDisplay = ({
   const a11yString = `${projectData.name}-project-details-view`.replace(
     / /g,
     "-",
-  ); //matches the button that opens this view
+  );
   return (
     <div
       id={a11yString}
