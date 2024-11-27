@@ -35,7 +35,7 @@ const ErrorUI = () => {
         </div>
       </div>
       <footer className="bg-not-black text-center font-garden_delight text-white">
-        © Mitchi (ChellScript), {year}
+        © Mitch (ChellScript), {year}
       </footer>
     </section>
   );

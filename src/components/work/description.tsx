@@ -44,7 +44,7 @@ const ProjectDescription = ({
               </div>
               <div className="w-full gap-y-4 space-y-2 self-end border-t border-dashed border-not-black/50 pt-2">
                 {externalLink && (
-                  <div className="flex flex-row flex-wrap items-center gap-x-2">
+                  <div className="my-2 flex flex-row flex-wrap items-center gap-x-2">
                     <div className="inline-flex h-fit gap-x-1 bg-brand-yellow/50 font-homevideo text-sm">
                       <p>Visit It</p>
                     </div>

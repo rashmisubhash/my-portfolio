@@ -44,7 +44,7 @@ const Hero = ({ data }: { data: HeroSectionProps }) => {
       <div className="[&_img.hero-image:nth-of-type(1)]:hero-show [&_img.hero-image:nth-of-type(2)]:hero-hidden peer-hover:[&_img.hero-image:nth-of-type(2)]:hero-show peer-hover:[&_img.hero-image:nth-of-type(1)]:hero-hidden row-start-1 grid min-h-128 w-fit max-w-hero overflow-hidden rounded-md border border-not-black bg-brand-blue bg-cover shadow shadow-not-black peer-hover:bg-hero-hidden peer-hover:bg-blend-color-burn md:max-h-144 md:grid-cols-2 md:grid-rows-5 md:justify-items-center">
         <div className="col-span-full col-start-1 row-span-full row-start-1 flex h-full flex-col self-center max-lg:z-1 md:col-span-1 md:row-span-full md:row-start-1 md:justify-center md:self-start md:justify-self-start">
           <h1 className="sr-only">
-            Hello, Beautiful World! My name is Mitchi and I am Front End
+            Hello, Beautiful World! My name is Mitch and I am Front End
             Developer, and User-Empathy Enthusiast, always! This is my portfolio
             site.
           </h1>
@@ -64,7 +64,7 @@ const Hero = ({ data }: { data: HeroSectionProps }) => {
               <span>
                 I'm{" "}
                 <span className="font-garden_delight text-brand-pink md:text-6xl">
-                  Mii!
+                  Mit!
                 </span>
               </span>
             </span>
@@ -92,7 +92,7 @@ const Hero = ({ data }: { data: HeroSectionProps }) => {
             width={400}
             height={437}
             sizes="(max-width: 375px) 400px,(max-width: 768px) 400px,(min-width: 1024px) 389px"
-            alt="Picture of Mitchi"
+            alt="Picture of Mitch"
             className="hero-image"
           />{" "}
           <Image
@@ -101,7 +101,7 @@ const Hero = ({ data }: { data: HeroSectionProps }) => {
             width={400}
             height={437}
             sizes="(max-width: 375px) 400px,(max-width: 768px) 400px,(min-width: 1024px) 389px"
-            alt="Picture of Mitchi Winking!"
+            alt="Picture of Mitch Winking!"
             className="hero-image hidden"
           />
         </div>
