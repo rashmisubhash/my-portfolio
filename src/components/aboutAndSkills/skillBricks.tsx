@@ -21,7 +21,7 @@ const SkillBricks = ({ data }: { data: AboutSectionProps["skills"] }) => {
           width={300}
           src={michiBuilder}
           className="m-0 object-cover max-lg:hidden lg:max-w-[400px]"
-          alt="Michi in a construction outfit"
+          alt="Mitchi in a construction outfit"
         />{" "}
         <div aria-describedby="skills" className="sr-only">
           {data}

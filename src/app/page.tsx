@@ -18,7 +18,7 @@ const Footer = dynamic(() => import("../components/footer"), {
 });
 
 const DESCRIPTION =
-  "Serving Sass.css and servers 💁🏾‍♀️✨. Hi, I'm Michi — a Front-End Developer & User-Empathy Enthusiast. Crafting smooth, intuitive, and accessible websites. Welcome to My Developer Portfolio!";
+  "Hey, I'm Mitchi — a Front-End Developer & User-Empathy Enthusiast with 5 years+ experience. Crafting smooth, intuitive, and accessible websites. Welcome to My Developer Portfolio!";
 
 export const metadata: Metadata = {
   title: "ChellScript",
