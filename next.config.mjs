@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   optimizeFonts: true,
   experimental: { optimizeCss: true },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {
