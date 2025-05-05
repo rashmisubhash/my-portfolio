@@ -4,3 +4,4 @@
 - [ ] Scroll bar counter functioning (GSAP)
 - [ ] Skill Search function for projects
 # my-portfolio
+# my-portfolio
