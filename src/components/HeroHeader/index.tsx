@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
-  Code,
   PenTool,
   Server,
   Users,

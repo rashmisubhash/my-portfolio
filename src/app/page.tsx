@@ -1,6 +1,6 @@
-import NavBar from "../components/navBar";
-import Hero from "@/src/components/hero";
-import { Metadata } from "next";
+// import NavBar from "../components/navBar";
+// import Hero from "@/src/components/hero";
+// import { Metadata } from "next";
 import getCopyData, { ReturnedResponse } from "../utils/getCopyData";
 import dynamic from "next/dynamic";
 import LoadingWrapper from "../components/loadingWrapper";
@@ -30,8 +30,8 @@ const SkillBricks = dynamic(() => import("../components/aboutAndSkills/skillBric
   ssr: false,
 });
 
-const DESCRIPTION =
-  "Hey, I'm Mitch — a Front-End Developer & User-Empathy Enthusiast with 5 years+ experience. Crafting smooth, intuitive, and accessible websites. Welcome to My Developer Portfolio!";
+// const DESCRIPTION =
+//   "Hey, I'm Mitch — a Front-End Developer & User-Empathy Enthusiast with 5 years+ experience. Crafting smooth, intuitive, and accessible websites. Welcome to My Developer Portfolio!";
 
 // export const metadata: Metadata = {
 //   title: "ChellScript",
