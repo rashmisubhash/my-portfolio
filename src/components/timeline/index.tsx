@@ -28,12 +28,13 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
     <section className="relative text-gray-900 bg-gradient-to-b from-purple-50 to-purple-50">
 
       <div className="relative z-10 max-w-5xl mx-auto py-20 px-4">
-        <h2 className="text-4xl font-semibold text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center">
           Experience
         </h2>
+        <p className="mt-4 text-lg text-gray-600 text-center mb-12">My journey over the years!!</p>
 
         {/* Timeline bar */}
-        <div className="relative mb-16">
+        <div className="relative pt-6 mb-16">
           {/* base line */}
           <div className="absolute inset-0 flex items-center">
             <div className="w-full h-1 bg-gray-300 rounded-full" />

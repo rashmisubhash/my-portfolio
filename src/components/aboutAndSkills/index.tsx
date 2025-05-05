@@ -17,14 +17,14 @@ export default function AboutMe({ data }: { data: AboutSectionProps }) {
     },
     {
       Icon: Handshake,
-      title: "VP, Blueprint Tech Club",
+      title: "VP, Blueprint Tech Club, RTC, CodePath",
       detail: "Mentoring & community leadership",
     },
     {
       Icon: Globe,
       title: "Volunteer, Crowd2Map Tanzania",
       detail: "Mapping for social impact",
-    },
+    }
   ];
 
   return (
@@ -88,7 +88,7 @@ export default function AboutMe({ data }: { data: AboutSectionProps }) {
               className="flex items-start space-x-4 p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
             >
               <Icon className="w-8 h-8 text-purple-500 flex-shrink-0" />
-              <div>
+              <div className="">
                 <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
                 <p className="text-gray-600">{detail}</p>
               </div>

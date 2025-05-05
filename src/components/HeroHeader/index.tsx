@@ -106,7 +106,7 @@ export default function Hero() {
             ].map(({ Icon, label, text }, idx) => (
               <div key={idx} className="flex items-start space-x-3">
                 <Icon className="w-5 h-5 text-yellow-300 mt-1 flex-shrink-0" />
-                <div>
+                <div className="mt-1">
                   <strong>{label}:</strong> {text}
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function Hero() {
                 style={{ objectFit: "cover" }}
               />
               <Image
-                src={myselfWink}
+                src={myself}
                 alt="Portrait of Rashmi winking"
                 fill
                 style={{ objectFit: "cover" }}

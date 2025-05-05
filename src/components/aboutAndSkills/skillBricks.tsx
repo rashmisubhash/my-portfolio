@@ -23,8 +23,8 @@ const SkillBricks = ({ data }: { data: AboutSectionProps }) => {
     <section id="skills" className="relative py-20 bg-white">
       {/* Section header */}
       <div className="text-center mb-8 px-4">
-        <h2 className="font-blacker text-2xl mb-2">{skillsTitle}</h2>
-        <p className="subline text-gray-600">{skillsSubline}</p>
+        <h2 className="font-blacker text-5xl mb-2">{skillsTitle}</h2>
+        <p className="mt-4 text-lg text-gray-600">{skillsSubline}</p>
       </div>
 
       {/* Card container */}
