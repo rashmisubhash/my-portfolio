@@ -1,108 +1,122 @@
+// components/AboutMe.tsx
 "use client";
 
-import React, { useState } from "react";
-import SkillBricks from "./skillBricks";
+import React from "react";
+import { motion } from "framer-motion";
 import { AboutSectionProps } from "@/src/typings";
-import StoryCorner from "./storyCorner";
-import TimeLine from "./timeline";
-import clsx from "clsx";
+import { GraduationCap, Handshake, Globe } from "lucide-react";
 
-const MobileButtons = ({
-  mobileButtons,
-  activeSlide,
-  setActiveSlide,
-}: {
-  mobileButtons: AboutSectionProps["mobileButtons"];
-  activeSlide: number;
-  setActiveSlide: (arg: number) => void;
-}) => {
-  return mobileButtons.list.map(({ label, emoji }, index) => (
-    <button
-      key={index}
-      className="cta-button bg-brand-yellow p-2 font-blacker text-not-black disabled:border-2 disabled:border-white disabled:bg-brand-purple disabled:text-white"
-      disabled={activeSlide == index}
-      onClick={() => setActiveSlide(index)}
-    >
-      {label}
-      <span className="inner-shadow-button aspect-square rounded-full border border-orange-950 bg-white px-2 py-1">
-        {emoji}
-      </span>
-    </button>
-  ));
-};
-const AboutMe = ({ data }: { data: AboutSectionProps }) => {
-  const {
-    skills,
-    story,
-    timeline,
-    aboutTitle,
-    aboutSubline,
-    skillsTitle,
-    skillsSubline,
-    mobileButtons,
-    timelineTitle,
-  } = data;
+export default function AboutMe({ data }: { data: AboutSectionProps }) {
+  const { aboutTitle, aboutSubline } = data;
 
-  const [activeDate, setActiveDate] = useState(0);
-  const [activeSlide, setActiveSlide] = useState(0);
+  const highlights = [
+    {
+      Icon: GraduationCap,
+      title: "MS Computer Science",
+      detail: "Rutgers University (’24–’25)",
+    },
+    {
+      Icon: Handshake,
+      title: "VP, Blueprint Tech Club",
+      detail: "Mentoring & community leadership",
+    },
+    {
+      Icon: Globe,
+      title: "Volunteer, Crowd2Map Tanzania",
+      detail: "Mapping for social impact",
+    },
+  ];
 
   return (
-    <div className="grid w-full auto-rows-min grid-cols-1 grid-rows-[repeat(2,auto)] flex-col items-center *:p-4 md:*:p-10">
-      <section
-        id="about"
-        className="flex w-full justify-center bg-orange-400/50 bg-about-pattern bg-repeat bg-blend-soft-light max-md:overflow-hidden *:lg:max-w-screen-lg"
-      >
-        <div className="col-span-full col-start-1 row-start-1 grid gap-y-8 max-md:grid-rows-[repeat(3,auto)] md:grid-cols-2">
-          <div className="col-span-full col-start-1 row-start-2 flex w-full flex-wrap gap-2 p-2 md:hidden">
-            <MobileButtons
-              mobileButtons={mobileButtons}
-              activeSlide={activeSlide}
-              setActiveSlide={setActiveSlide}
-            />
-          </div>
-          <div className="col-span-full row-start-1 text-center">
-            <h2 className="font-blacker">{aboutTitle}</h2>
-            <p className="subline">{aboutSubline}</p>
-          </div>
-          <div
-            className={clsx(
-              "col-start-1 row-start-3 max-md:h-fit md:col-span-full md:col-start-1 md:row-start-2",
-              activeSlide == 0
-                ? "max-md:animate-sideswipe-left-in"
-                : "max-md:hidden max-md:animate-sideswipe-left-out md:animate-[initial]",
-            )}
+    <section
+      id="about"
+      className="bg-white py-10 md:py-10"
+      aria-labelledby="about-title"
+    >
+      <div className="container mx-auto px-6 lg:px-8 space-y-12">
+        {/* Title & Hook */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto text-center"
+        >
+          <h2
+            id="about-title"
+            className="text-4xl md:text-5xl font-extrabold text-gray-900"
           >
-            <StoryCorner data={story.list} />
-          </div>
-          <div
-            className={clsx(
-              "col-start-1 row-start-3 max-md:w-full md:col-span-full md:row-start-3",
-              activeSlide == 1
-                ? "max-md:animate-sideswipe-right-in"
-                : "max-md:hidden max-md:animate-sideswipe-right-out",
-            )}
-          >
-            <h2 className="mb-8 text-center max-md:hidden">{timelineTitle}</h2>
-            <TimeLine
-              data={timeline.list}
-              activeDate={activeDate}
-              setActiveDate={setActiveDate}
-            />
-          </div>
-        </div>
-      </section>
-      <section
-        id="skills"
-        className="col-span-full col-start-1 row-start-2 flex flex-col items-center bg-red-400/50 bg-skills-pattern bg-blend-color md:col-span-2 *:lg:max-w-screen-lg"
-      >
-        <span className="mb-4 text-center">
-          <h2 className="mb-0 text-center">{skillsTitle}</h2>
-          <p className="subline">{skillsSubline}</p>
-        </span>
-        <SkillBricks data={skills} />
-      </section>
-    </div>
-  );
-};
+            {aboutTitle}
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">{aboutSubline}</p>
+        </motion.div>
 
-export default AboutMe;
+        {/* Story */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="prose prose-lg prose-gray max-w-3xl mx-auto"
+        >
+          <p className="lead">
+            Hi there! I’m <strong>Rashmi Subhash</strong>—a backend engineer & AWS
+            enthusiast on a mission to turn complex problems into elegant,
+            serverless solutions.
+          </p>
+          <p>
+            Whether it’s architecting carbon-reducing carpool platforms or
+            building feedback systems for 40k+ users, I love marrying code with
+            data to drive real impact.
+          </p>
+          <p>
+            Outside of the terminal, I co-lead Blueprint’s tech community,
+            share what I learn at AWS meetups, and map underserved regions in
+            Tanzania with Crowd2Map—all to empower communities through
+            thoughtful, data-driven innovation.
+          </p>
+        </motion.div>
+
+        {/* Highlights Grid */}
+        <motion.ul
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto"
+        >
+          {highlights.map(({ Icon, title, detail }) => (
+            <li
+              key={title}
+              className="flex items-start space-x-4 p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+            >
+              <Icon className="w-8 h-8 text-purple-500 flex-shrink-0" />
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+                <p className="text-gray-600">{detail}</p>
+              </div>
+            </li>
+          ))}
+        </motion.ul>
+
+        {/* CTAs */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.9, duration: 0.6 }}
+          className="flex flex-col sm:flex-row justify-center gap-4"
+        >
+          <a
+            href="#projects"
+            className="px-8 py-3 bg-purple-600 text-white font-semibold rounded-full shadow hover:bg-purple-700 transition"
+          >
+            View My Work
+          </a>
+          <a
+            href="#blog"
+            className="px-8 py-3 border-2 border-purple-600 text-purple-600 font-semibold rounded-full hover:bg-purple-50 transition"
+          >
+            Read My Blog
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  );
+}

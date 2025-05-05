@@ -1,3 +1,5 @@
+import { list } from "postcss";
+
 export interface DataProps {
   navigation: NavigationProps;
   hero: HeroSectionProps;
@@ -34,21 +36,42 @@ export interface HeroSectionProps {
   };
 }
 
+// Skill group for About section
+export interface SkillGroup {
+  category: string;
+  items: string[];
+}
+
+// About & Skills section
 export interface AboutSectionProps {
   aboutTitle: string;
   aboutSubline: string;
+  skillGroups: SkillGroup[];
+  skills: string;
   skillsTitle: string;
   skillsSubline: string;
-  skills: string;
   timelineTitle: string;
   mobileButtons: { list: { label: string; emoji: string }[] };
-  story: {
-    list: { title: string; content: string }[];
-  };
-  timeline: {
-    list: TimelineProps[];
-  };
+  story: { list: { title: string; content: string }[] };
+  timeline: { list: TimelineProps[] };
 }
+
+// export interface AboutSectionProps {
+//   aboutTitle: string;
+//   aboutSubline: string;
+//   skillGroups: {list: {categody: string; items: string[]}};
+//   skillsTitle: string;
+//   skillsSubline: string;
+//   skills: string;
+//   timelineTitle: string;
+//   mobileButtons: { list: { label: string; emoji: string }[] };
+//   story: {
+//     list: { title: string; content: string }[];
+//   };
+//   timeline: {
+//     list: TimelineProps[];
+//   };
+// }
 export interface TimelineProps {
   title: string;
   date: string;

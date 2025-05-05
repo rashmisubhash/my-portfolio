@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import HeroCards from "./heroCards";
 import { HeroSectionProps } from "@/src/typings";
-import myself from "/public/images/hero/myself_exnvyb.webp";
+import myself from "/public/images/hero/my_photo.png";
 import myselfWink from "/public/images/hero/myself-wink_sotgys.webp";
 import HeroBullet from "@/src/components/criticalIcons/HeroBullet";
 import Arrow from "../criticalIcons/Arrow";
@@ -62,22 +62,22 @@ const Hero = ({ data }: { data: HeroSectionProps }) => {
                 World!
               </span>
               <span>
-                I'm{" "}
+              Hi, {" "}
                 <span className="font-garden_delight text-brand-pink md:text-6xl">
-                  Mit!
+                I’m Rashmi 👩🏽‍💻
                 </span>
               </span>
             </span>
             <span className="inline-block w-fit text-[1.75rem] text-white md:whitespace-nowrap lg:text-4xl">
               <span className="block gap-x-1 xs:flex xs:items-baseline max-xs:[&_svg]:hidden">
-                <HeroBullet /> Front End Developer
+                <HeroBullet /> ✨ Backend Engineer | AWS Community Builder  
               </span>
               <span className="block gap-x-1 xs:flex xs:items-baseline max-xs:[&_svg]:hidden">
                 <HeroBullet />
                 <span>
-                  User-Empathy Enthusiast, <br />
+                ✨ Crafting scalable systems,   <br />
                   <span className="relative font-garden_delight text-amber-300 underline decoration-red-400 decoration-wavy decoration-2 underline-offset-4">
-                    alwas
+                  one Lambda at a time ⚙️
                   </span>
                 </span>
               </span>
