@@ -71,7 +71,7 @@ export default async function Home() {
 
   return (
     <LoadingWrapper>
-      <NavBar data={navigation} />
+      {/* <NavBar data={navigation} /> */}
       <HeroHeader />
       <AboutMe data={about} />
       <Timeline
@@ -88,9 +88,9 @@ export default async function Home() {
 
       {/* <Hero data={hero} /> */}
       
-      <Work data={previousWork} />
+      {/* <Work data={previousWork} />
       <Contact data={contact} />
-      <Footer data={footer} />
+      <Footer data={footer} /> */}
     </LoadingWrapper>
   );
 }
