@@ -11,7 +11,7 @@ import {
   UserPlus,
 } from "lucide-react";
 import myself from "/public/images/hero/my_photo.png";
-import myselfWink from "/public/images/hero/myself-wink_sotgys.webp";
+import myselfWink from "/public/images/hero/image.png";
 
 export default function Hero() {
   return (
@@ -148,7 +148,7 @@ export default function Hero() {
                 style={{ objectFit: "cover" }}
               />
               <Image
-                src={myself}
+                src={myselfWink}
                 alt="Portrait of Rashmi winking"
                 fill
                 style={{ objectFit: "cover" }}
