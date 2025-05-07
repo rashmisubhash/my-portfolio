@@ -70,7 +70,7 @@ export default function AboutMe({ data }: { data: AboutSectionProps }) {
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           <p>
-            I’m <strong>Rashmi Subhash</strong>, a backend engineer with a passion for building serverless systems that scale effortlessly. Curious by nature and detail-oriented by habit, I dive deep into distributed architectures, optimize performance, and automate workflows to deliver reliable solutions.
+            I’m <strong>Rashmi Subhash</strong>, a full-stack engineer with a passion for building serverless systems that scale effortlessly. Curious by nature and detail-oriented by habit, I dive deep into distributed architectures, optimize performance, and automate workflows to deliver reliable solutions.
           </p>
           <p>
             My journey began experimenting with simple APIs, today I architect complex data pipelines on AWS, mentor emerging developers, and speak on topics ranging from Lambda best practices to cloud-native design. As a champion for women in tech, I strive to create inclusive environments through mentorship and community events.
