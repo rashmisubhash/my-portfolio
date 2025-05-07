@@ -10,7 +10,7 @@ import {
   Trophy,
   UserPlus,
 } from "lucide-react";
-import myself from "/public/images/hero/my_photo.png";
+import myself from "/public/images/hero/mine.png";
 import myselfWink from "/public/images/hero/image.png";
 
 export default function Hero() {
