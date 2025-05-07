@@ -62,11 +62,11 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
                   className="flex flex-col items-center focus:outline-none"
                 >
                   <div
-                    className={`w-10 h-10 flex items-center justify-center rounded-full bg-white transition-shadow ${
+                    className={`w-10 h-10 flex items-center justify-center rounded-full transition-shadow ${
                       isActive
                         ? "ring-2 ring-purple-500 shadow-lg"
                         : "opacity-60 shadow-md"
-                    } ${item.company ==  "AWS" ? "bg-black": ""}`}
+                    } ${item.company == "AWS" ? "bg-black": "bg-white"}`}
                   >
                     {item.iconUrl || item.logo ? (
                       <Image
