@@ -68,7 +68,7 @@ const Work = ({ data }: { data: ProjectsAndBlogsProps }) => {
         <p className="text-sm text-gray-500 mb-12">{filtered.length} {filtered.length===1? 'item':'items'} found</p>
 
         <TabGroup manual selectedIndex={selectedTab} onChange={i => { setSelectedTab(i); setSearchTerm(""); }}>
-          <TabList className="flex justify-center w-full space-x-12 border-b-2 border-gray-300 mb-8" role="tablist">
+          <TabList className="flex justify-center w-full space-x-12 border-b-2 border-gray-300 mb-8">
             {tabs.map((t,i) => (
               <ProjectTabs key={i} label={t.name} isSelected={i===selectedTab} onClick={() => setSelectedTab(i)} />
             ))}
