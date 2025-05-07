@@ -70,19 +70,26 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
           skillGroups: [
             {
               category: "Languages",
-              items: ["Python", "JavaScript", "Java", "TypeScript", "HTML", "CSS3"]
+              items: [
+                "Python",
+                "JavaScript",
+                "Java",
+                "TypeScript",
+                "HTML",
+                "CSS3",
+              ],
             },
             {
               category: "Frontend",
-              items: ["React.js", "Next.js", "Material UI", "Bootstrap"]
+              items: ["React.js", "Next.js", "Material UI", "Bootstrap"],
             },
             {
               category: "Backend & APIs",
-              items: ["FastAPI", "Node.js", "Boto3"]
+              items: ["FastAPI", "Node.js", "Boto3"],
             },
             {
               category: "Databases",
-              items: ["DynamoDB", "MongoDB", "PostgreSQL", "MySQL"]
+              items: ["DynamoDB", "MongoDB", "PostgreSQL", "MySQL"],
             },
             {
               category: "Infrastructure & DevOps",
@@ -90,7 +97,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                 "Lambda",
                 "Step Functions",
                 "API Gateway",
-                "Bedrock", 
+                "Bedrock",
                 "Polly",
                 "SageMaker",
                 "Q",
@@ -103,13 +110,14 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                 "Cognito",
                 "Docker",
                 "CI/CD",
-                "Git & GitHub"
-              ]
-            }
-          ],          
+                "Git & GitHub",
+              ],
+            },
+          ],
           skillsTitle: "Skills",
           skillsSubline: "My stack and toolbelt",
-          skills: "Python, FastAPI, AWS Lambda, Step Functions, DynamoDB, JavaScript, Reactjs, Nodejs, Nextjs, HTML, CSS3",
+          skills:
+            "Python, FastAPI, AWS Lambda, Step Functions, DynamoDB, JavaScript, Reactjs, Nodejs, Nextjs, HTML, CSS3",
           timelineTitle: "My Journey",
           mobileButtons: {
             list: [{ label: "Explore", emoji: "🧭" }],
@@ -166,6 +174,72 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
             ],
           },
         },
+        projectsAndBlogs: {
+          blogs: [
+            {
+              name: "Building a Real-Time Carpooling App with AWS",
+              description:
+                "Where rides meet friendships! Share rides, save money, cut emissions, and connect with fellow students. Smarter, greener, and more fun—RU Ready to Carpool? ",
+              cover: "/images/projects/rucarpooling.png",
+              externalLink: "https://rashmisubhash.hashnode.dev/building-a-real-time-carpooling-app-with-aws",
+              keywords: "AWS",
+            },
+            {
+              name: "A more advanced guide to the useState Hooks 🕕>🦸‍♀️",
+              description:
+"Advanced topics, rules to follow, and avoiding mistakes when using the useState Hook.",
+              cover: "/images/projects/usestate.png",
+              externalLink: "https://rashmisubhash.hashnode.dev/a-more-advanced-guide-to-the-usestate-hooks",
+              keywords: "React.js",
+            },
+            {
+              name: "Complete beginner's guide on the useState Hooks 🕛>🦸‍♀️",
+              description:
+"Beginner topics, rules to follow, and avoiding mistakes when using the useState Hook.",
+              cover: "/images/projects/usestate.png",
+              externalLink: "https://rashmisubhash.hashnode.dev/complete-beginners-guide-on-the-usestate-hooks",
+              keywords: "React.js",
+            },
+          ],
+          projects: [
+            {
+              name: "RUCarpooling",
+              description:
+                "Where rides meet friendships! Share rides, save money, cut emissions, and connect with fellow students. Smarter, greener, and more fun—RU Ready to Carpool? ",
+              cover: "/images/projects/rucarpooling.png",
+              media: "",
+              mediaType: "image",
+              techUsed:
+                "AWS - CloudWatch, DynamoDB, Lambda, SES, API GateWay; Python, Boto3, FastAPI, Flutter, GENAI, Grow, OSRM, Serverless, Websockets",
+              externalLink: "https://devpost.com/software/rucarpooling-yoet12",
+              githubLink: "https://github.com/rashmisubhash/RUCarpooling",
+            },
+            {
+              name: "EchoPod",
+              description:
+                "Welcome to EchoPod – Smart Audio Learning on the Go. Your personalized, AI-powered podcast learning experience",
+              cover: "/images/projects/echopod.png",
+              media: "",
+              mediaType: "image",
+              techUsed:
+                "AWS - CloudWatch, DynamoDB, Lambda, Bedrock, API GateWay, Step Functions; Python, Boto3, FastAPI, Flutter, GENAI, Claude, OSRM, Serverless, Websockets",
+              externalLink: "https://devpost.com/software/echopod",
+              githubLink: "https://github.com/rashmisubhash/RUCarpooling",
+            },
+            {
+              name: "Stream Study",
+              description:
+                "An AI-powered platform that turns any topic into structured audio & video lessons—personalized, cloud-delivered, and ready for learning on the go.",
+              cover: "/images/projects/streamstudy.png",
+              media: "",
+              mediaType: "image",
+              techUsed:
+                "AWS - CloudWatch, DynamoDB, Lambda, Bedrock, API GateWay, Step Functions; Python, Boto3, FastAPI, Flutter, GENAI, Claude, OSRM, Serverless, Websockets",
+              externalLink: "https://devpost.com/software/streamstudy",
+              githubLink: "https://github.com/rashmisubhash/RUCarpooling",
+            },
+          ],
+        },
         previousWork: {
           title: "Experience",
           subline: "Roles & Projects",
@@ -181,14 +255,12 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                 projects: [
                   {
                     name: "Ergonomic Risk Assessment",
-                    description:
-                      "Incoming SDE Intern @AWS Fargate",
+                    description: "Incoming SDE Intern @AWS Fargate",
                     cover: "",
                     media: "",
                     mediaType: "image",
                     techUsed: "AWS EC2, React.js, Flask",
                   },
-                  
                 ],
               },
               {
@@ -297,7 +369,8 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                     media: "",
                     mediaType: "image",
                     techUsed: "AWS SNS, SQS, CloudWatch",
-                    "description": "Engineered a viral referral contest feature and fully customizable event pages integrated Stripe for seamless international payments driving a 5x lift in sales and expanding global reach across multiple time zones."
+                    description:
+                      "Engineered a viral referral contest feature and fully customizable event pages integrated Stripe for seamless international payments driving a 5x lift in sales and expanding global reach across multiple time zones.",
                   },
                   {
                     name: "Contact Attendees Module",
@@ -305,7 +378,8 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                     media: "",
                     mediaType: "image",
                     techUsed: "AWS SNS, SQS, CloudWatch",
-                    description: "Championed Agile best practices by leading technical demos, sprint planning sessions, and cross-team syncs, removing blockers, accelerating delivery cadence, and ensuring 99.9% platform uptime."
+                    description:
+                      "Championed Agile best practices by leading technical demos, sprint planning sessions, and cross-team syncs, removing blockers, accelerating delivery cadence, and ensuring 99.9% platform uptime.",
                   },
                   {
                     name: "Contact Attendees Module",
@@ -313,8 +387,9 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                     media: "",
                     mediaType: "image",
                     techUsed: "AWS SNS, SQS, CloudWatch",
-                    description: "Mentored and coached junior engineers on scalable architecture, test driven development, and code review rigor, elevating team competency and consistently delivering high-quality releases."
-                  }
+                    description:
+                      "Mentored and coached junior engineers on scalable architecture, test driven development, and code review rigor, elevating team competency and consistently delivering high-quality releases.",
+                  },
                 ],
               },
               {
@@ -349,8 +424,9 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                     media: "",
                     mediaType: "image",
                     techUsed: "JavaScript, REST",
-                    description: "Collaborated with cross-functional teams (design, content, DevOps) to implement accessibility best practices, optimize performance, and leverage analytics insights amplifying event visibility and conversion."
-                  }
+                    description:
+                      "Collaborated with cross-functional teams (design, content, DevOps) to implement accessibility best practices, optimize performance, and leverage analytics insights amplifying event visibility and conversion.",
+                  },
                 ],
               },
               {

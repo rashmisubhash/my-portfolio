@@ -37,7 +37,7 @@ export default async function Home() {
     return;
   }
 
-  const { hero, about, contact, previousWork, navigation, footer } = data;
+  const { hero, about, contact, previousWork, navigation, footer, projectsAndBlogs } = data;
   
 
 
@@ -58,6 +58,7 @@ export default async function Home() {
         }))}
       />
       <SkillBricks data={about} />
+      <Work data={projectsAndBlogs} />
 
       {/* <Hero data={hero} /> */}
       

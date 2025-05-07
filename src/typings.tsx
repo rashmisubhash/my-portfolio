@@ -7,6 +7,7 @@ export interface DataProps {
   contact: ContactSectionProps;
   previousWork: PreviousWorkSectionProps;
   footer: FooterProps;
+  projectsAndBlogs: ProjectsAndBlogsProps;
 }
 
 export interface NavigationProps {
@@ -65,6 +66,34 @@ export interface TimelineProps {
   content: string;
   link_company: string;
   type: "life" | "work" | "special";
+}
+
+
+export interface ProjectsAndBlogsProps {
+  projects: ProjectDataProps[];
+  blogs: BlogsDataProps[];
+  
+}
+
+export interface BlogsDataProps {
+  name: string;
+  description: string | null;
+  cover: string;
+  externalLink?: string;
+  keywords: string;
+}
+
+export interface ProjectDataProps {
+  name: string;
+  description: string | null;
+  cover: string;
+  media: string;
+  mediaLightbox?: string;
+  mediaDescription?: string;
+  mediaType: "image" | "video";
+  techUsed: string;
+  externalLink?: string;
+  githubLink?: string;
 }
 
 export interface PreviousWorkSectionProps {

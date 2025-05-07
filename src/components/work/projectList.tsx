@@ -1,97 +1,122 @@
+// src/components/projectList.tsx
 "use client";
 
-import React, { useMemo } from "react";
-import TechTags from "./techTags";
+import React from "react";
 import clsx from "clsx";
-import { CompaniesDataProps } from "@/src/typings";
-import { getCldImageUrl } from "next-cloudinary";
-import { ListPlaceholder, loadingBlur } from "./placeholder";
 import Image from "next/image";
-import { TabPanel } from "@headlessui/react";
+import { ProjectDataProps, BlogsDataProps } from "@/src/typings";
 
+// Tech stack pills (max height, scroll if overflow)
+const TechStack = ({ tech }: { tech: string }) => (
+  <div className="mt-4 flex gap-2 flex-wrap max-h-20 overflow-y-auto">
+    {tech.split(",").map((t) => (
+      <span key={t} className="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">
+        {t.trim()}
+      </span>
+    ))}
+  </div>
+);
+
+type Item = ProjectDataProps | BlogsDataProps;
 type ProjectListProps = {
-  data: CompaniesDataProps["projects"];
-  isSelected: boolean;
-  setSelectedProjectIndex: (arg: number) => void;
-  className?: string;
+  data: Item[];
+  setSelectedProjectIndex: (idx: number) => void;
 };
 
-const ProjectList = ({
-  data,
-  setSelectedProjectIndex,
-  className = "",
-  isSelected,
-}: ProjectListProps) => {
-  const workData = useMemo(() => data, [data]);
+const isProject = (item: Item): item is ProjectDataProps =>
+  (item as ProjectDataProps).techUsed !== undefined;
 
-  return (
-    isSelected && (
-      <TabPanel
-        as="div"
-        static
-        data-selected={isSelected}
-        className={clsx(
-          className,
-          "flex size-full flex-col items-center justify-center md:justify-start",
-        )}
+/**
+ * Renders a list of cards. Work.tsx handles layout and visibility.
+ */
+const ProjectList = ({ data, setSelectedProjectIndex }: ProjectListProps) => (
+  <>
+    {data.map((item, idx) => (
+      <article
+        key={idx}
+        className="group flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300"
+        role="article"
+        aria-labelledby={`card-title-${idx}`}
       >
-        <ul className="grid h-fit w-full grid-flow-col auto-rows-max items-center justify-start gap-4 text-clip rounded-md ease-in-out max-md:overflow-x-scroll md:size-full md:auto-cols-min md:grid-flow-row md:grid-cols-3 lg:grid-cols-4">
-          {workData.map(({ name, techUsed, cover }, index) => {
-            let imageUrl;
-            if (cover) {
-              imageUrl = getCldImageUrl({
-                width: 960,
-                height: 600,
-                src: cover,
-              });
-            }
+        {/* Cover Image */}
+        <div className="relative w-full aspect-video">
+          <Image
+            src={item.cover}
+            alt={item.name}
+            layout="fill"
+            objectFit="cover"
+            className="group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
 
-            return (
-              <li
-                className={clsx(
-                  "group relative grid snap-x flex-col items-center justify-center py-4 opacity-100 transition-all duration-0 ease-linear md:flex md:grayscale-0",
-                )}
-                key={index}
-                id={`project-${index}`}
-              >
-                <button
-                  aria-label={`View Details about ${name}`}
-                  onClick={() => setSelectedProjectIndex(index)}
-                  className="group relative z-1 flex h-80 w-52 flex-col flex-nowrap gap-y-2 rounded-lg border border-not-black/80 bg-white p-2 transition-all hover:-translate-y-2 hover:shadow-card-hover hover:shadow-[#8F5C8F]/70 md:h-72"
-                >
-                  <div className="self-center overflow-hidden rounded-lg border border-not-black/50 p-1 *:size-40">
-                    {imageUrl ? (
-                      <Image
-                        width="160"
-                        height="160"
-                        src={imageUrl}
-                        alt={`${name} Cover`}
-                        sizes="160px"
-                        className="size-auto rounded-lg border-not-black object-contain transition-transform ease-in-out group-hover:scale-125 motion-reduce:transition-transform"
-                        placeholder="blur"
-                        blurDataURL={loadingBlur}
-                      />
-                    ) : (
-                      <ListPlaceholder />
-                    )}
-                  </div>
-                  <h3
-                    title={name}
-                    className="relative m-0 line-clamp-1 text-left font-blacker text-lg"
-                  >
-                    {name}
-                  </h3>
-                  <div className="flex flex-row flex-wrap justify-start gap-2">
-                    {techUsed && <TechTags limit={3} tagsString={techUsed} />}
-                  </div>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      </TabPanel>
-    )
-  );
-};
+        {/* Content + Tech Stack */}
+        <div className="p-6 flex flex-col flex-grow">
+          <h3
+            id={`card-title-${idx}`}
+            className="font-blacker text-2xl mb-2 text-black group-hover:text-purple-700 transition-colors duration-200"
+          >
+            {item.name}
+          </h3>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            {item.description}
+          </p>
+          {isProject(item) && <TechStack tech={item.techUsed} />}
+        </div>
+
+        {/* Actions pinned at bottom */}
+        <div className="p-6 pt-0 flex flex-wrap gap-3 mt-auto mx-auto">
+          {isProject(item) && item.githubLink && (
+            <a
+              href={item.githubLink}
+              onClick={() => setSelectedProjectIndex(idx)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full hover:bg-gray-200 transition"
+            >
+              <span aria-hidden="true">💻</span>
+              <span>Code</span>
+            </a>
+          )}
+          {isProject(item) && (item as ProjectDataProps).externalLink && (
+            <a
+              href={(item as ProjectDataProps).externalLink!}
+              onClick={() => setSelectedProjectIndex(idx)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full hover:bg-gray-200 transition"
+            >
+              <span aria-hidden="true">📄</span>
+              <span>Docs</span>
+            </a>
+          )}
+          {isProject(item) && (item as ProjectDataProps).externalLink && (
+            <a
+              href={(item as ProjectDataProps).externalLink!}
+              onClick={() => setSelectedProjectIndex(idx)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full hover:bg-gray-200 transition"
+            >
+              <span aria-hidden="true">🎥</span>
+              <span>Demo</span>
+            </a>
+          )}
+          {!isProject(item) && (item as BlogsDataProps).externalLink && (
+            <a
+              href={(item as BlogsDataProps).externalLink!}
+              onClick={() => setSelectedProjectIndex(idx)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full hover:bg-gray-200 transition"
+            >
+              <span aria-hidden="true">📄</span>
+              <span>Read Blog</span>
+            </a>
+          )}
+        </div>
+      </article>
+    ))}
+  </>
+);
 
 export default ProjectList;
