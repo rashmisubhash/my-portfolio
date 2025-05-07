@@ -230,7 +230,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "CertHub",
                     description:
-                      "Directed the development of CertHub, a dynamic platform empowering event organizers to create customized feedback forms and providing in-depth analysis of user engagement metrics to drive data-informed decisions.",
+                      "Directed the development of CertHub, a dynamic platform empowering event organizers to create customized feedback forms and providing in-depth analysis of user engagement metrics to drive data informed decisions.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -248,7 +248,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Women at KonfHub Initiative",
                     description:
-                      "Managed a team of 20+ cross-functional members, implementing Agile methodologies such as sprint retrospectives, task designation, and continuous integration to accelerate delivery timelines by 30% and foster high-quality output.",
+                      "Managed a team of 20+ cross-functional members, implementing Agile methodologies such as sprint retrospectives, task designation, and continuous integration to accelerate delivery timelines by 30% and foster high quality output.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -257,7 +257,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Women at KonfHub Initiative",
                     description:
-                      "Spearheaded the Women at KonfHub initiative by organizing interactive sessions and promoting work-life balance, which helped improve team cohesion by 70% during my tenure.",
+                      "Spearheaded the Women at KonfHub initiative by organizing interactive sessions and promoting work life balance, which helped improve team cohesion by 70% during my tenure.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -285,7 +285,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Contact Attendees Module",
                     description:
-                      "Architected and deployed high-throughput communication pipelines and real-time analytics dashboards using Python, React.js, TypeScript, Bootstrap, and AWS (Lambda, Step Functions, Event Bridge, API GateWay, Cognio, SNS, SQS, CloudWatch), supporting 500+ events for 100+ enterprise clients.",
+                      "Architected and deployed high throughput communication pipelines and real-time analytics dashboards using Python, React.js, TypeScript, Bootstrap, and AWS (Lambda, Step Functions, Event Bridge, API GateWay, Cognio, SNS, SQS, CloudWatch), supporting 500+ events for 100+ enterprise clients.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -297,7 +297,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                     media: "",
                     mediaType: "image",
                     techUsed: "AWS SNS, SQS, CloudWatch",
-                    "description": "Engineered a viral referral-contest feature and fully customizable event pages—integrated Stripe for seamless international payments—driving a 5x lift in sales and expanding global reach across multiple time zones."
+                    "description": "Engineered a viral referral contest feature and fully customizable event pages integrated Stripe for seamless international payments driving a 5x lift in sales and expanding global reach across multiple time zones."
                   },
                   {
                     name: "Contact Attendees Module",
@@ -313,7 +313,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                     media: "",
                     mediaType: "image",
                     techUsed: "AWS SNS, SQS, CloudWatch",
-                    description: "Mentored and coached junior engineers on scalable architecture, test-driven development, and code-review rigor, elevating team competency and consistently delivering high-quality releases."
+                    description: "Mentored and coached junior engineers on scalable architecture, test driven development, and code review rigor, elevating team competency and consistently delivering high-quality releases."
                   }
                 ],
               },
@@ -328,7 +328,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Event Site Development",
                     description:
-                      "Orchestrated the end-to-end design, development, and deployment of 16 high-traffic event websites on Microsoft Azure, RedHat, GirlScript, and AWS, ensuring enterprise-grade scalability and 99.9% uptime.",
+                      "Orchestrated the end-to-end design, development, and deployment of 16 high traffic event websites on Microsoft Azure, RedHat, GirlScript, and AWS, ensuring enterprise grade scalability and 99.9% uptime.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -337,7 +337,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "API Integration",
                     description:
-                      "Engineered responsive, user-centric interfaces that seamlessly handled 100K+ registrations, streamlining the onboarding flow and elevating attendee engagement.",
+                      "Engineered responsive, user centric interfaces that seamlessly handled 100K+ registrations, streamlining the onboarding flow and elevating attendee engagement.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -349,7 +349,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                     media: "",
                     mediaType: "image",
                     techUsed: "JavaScript, REST",
-                    description: "Collaborated with cross-functional teams (design, content, DevOps) to implement accessibility best practices, optimize performance, and leverage analytics insights—amplifying event visibility and conversion."
+                    description: "Collaborated with cross-functional teams (design, content, DevOps) to implement accessibility best practices, optimize performance, and leverage analytics insights amplifying event visibility and conversion."
                   }
                 ],
               },
