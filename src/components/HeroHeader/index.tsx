@@ -10,7 +10,7 @@ import {
   Trophy,
   UserPlus,
 } from "lucide-react";
-import myself from "/public/images/hero/mine.png";
+import myself from "/public/images/hero/aws.png";
 import myselfWink from "/public/images/hero/image.png";
 
 export default function Hero() {
@@ -158,7 +158,7 @@ export default function Hero() {
 
             {/* Hover hint */}
             <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-white bg-opacity-20 backdrop-blur-md px-3 py-1 rounded-full text-purple-900 text-xs">
-              Hover to Wink 😉
+              Hover 😉
             </div>
           </div>
         </motion.div>
