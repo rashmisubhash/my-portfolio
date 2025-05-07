@@ -30,34 +30,6 @@ const SkillBricks = dynamic(() => import("../components/aboutAndSkills/skillBric
   ssr: false,
 });
 
-// const DESCRIPTION =
-//   "Hey, I'm Mitch — a Front-End Developer & User-Empathy Enthusiast with 5 years+ experience. Crafting smooth, intuitive, and accessible websites. Welcome to My Developer Portfolio!";
-
-// export const metadata: Metadata = {
-//   title: "ChellScript",
-//   description: DESCRIPTION,
-//   openGraph: {
-//     type: "website",
-//     url: process.env.SITE_URL || "http://localhost:3000",  
-//   // openGraph: {
-//   //   type: "website",
-//   //   url: `${process.env.SITE_URL}`,
-//     title: "ChellScript",
-//     description: DESCRIPTION,
-//   },
-//   twitter: {
-//     title: "ChellScript",
-//     card: "summary_large_image",
-//     description: DESCRIPTION,
-//   },
-//   robots: {
-//     googleBot: {
-//       noimageindex: true,
-//       "max-video-preview": -1,
-//     },
-//   },
-// };
-
 export default async function Home() {
   const { data, error }: ReturnedResponse = await getCopyData();
 
@@ -82,6 +54,7 @@ export default async function Home() {
           logo: w.logo || "",
           description: w.projects[0]?.description || "",
           bullets:     w.projects.map((p) => p.description || p.name),
+          link_company: w.link_company || ""
         }))}
       />
       <SkillBricks data={about} />

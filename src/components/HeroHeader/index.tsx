@@ -86,7 +86,7 @@ export default function Hero() {
               {
                 Icon: Users,
                 label: "Mentor",
-                text: "Guided 60+ students",
+                text: "Guided 80+ students",
               },
               {
                 Icon: Notebook,
@@ -96,7 +96,7 @@ export default function Hero() {
               {
                 Icon: Trophy,
                 label: "Hackathons",
-                text: "5+ award-winning prototypes",
+                text: "2+ award-winning prototypes",
               },
               {
                 Icon: UserPlus,
@@ -121,7 +121,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.2, type: "spring", stiffness: 120 }}
           >
-            See My Work
+            Explore My Portfolio
           </motion.a>
         </div>
 

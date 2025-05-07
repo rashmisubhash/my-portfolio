@@ -13,6 +13,7 @@ export type TimelineItem = {
   bullets: string[];
   logo?: string;
   iconUrl?: string;
+  link_company?: string;
 };
 
 interface TimelineProps {
@@ -65,7 +66,7 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
                       isActive
                         ? "ring-2 ring-purple-500 shadow-lg"
                         : "opacity-60 shadow-md"
-                    }`}
+                    } ${item.company ==  "AWS" ? "bg-black": ""}`}
                   >
                     {item.iconUrl || item.logo ? (
                       <Image
@@ -102,18 +103,22 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="bg-gradient-to-br from-purple-300 to-purple-600 text-white rounded-lg p-8 shadow-lg"
+          // className="bg-gradient-to-br from-purple-300 to-purple-600 text-white rounded-lg p-8 shadow-lg"
+          className="relative p-8 rounded-lg bg-gradient-to-r from-purple-400 to-purple-600 text-white shadow-lg"
         >
-          <h3 className="text-2xl font-semibold mb-3">
-            {items[selectedIndex].title}
-          </h3>
-          <p className="text-sm italic mb-4">
-            {items[selectedIndex].company}
-          </p>
-          {items[selectedIndex].description && (
+          <h3 className="text-2xl font-semibold mb-3 text-gray-100 drop-shadow-sm">
+  {items[selectedIndex].title},{" "}
+  <a
+    href={items[selectedIndex].link_company}
+    className="text-yellow-500 underline font-normal hover:text-yellow-500 transition-colors"
+  >
+    {items[selectedIndex].company}
+  </a>
+</h3>
+          {/* {items[selectedIndex].description && (
             <p className="mb-4">{items[selectedIndex].description}</p>
-          )}
-          <ul className="list-disc list-inside space-y-2">
+          )} */}
+          <ul className="list-disc list-inside space-y-2 font-semibold text-gray-100">
             {items[selectedIndex].bullets.map((b, i) => (
               <li key={i}>{b}</li>
             ))}

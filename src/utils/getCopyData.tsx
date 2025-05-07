@@ -135,6 +135,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                 date: "2024 - Present",
                 role: "MS CS Student",
                 image: "/images/work/kh.png",
+                link_company: "https://www.rutgers.edu/",
                 alt: "Rutgers",
                 content:
                   "Pursuing my Master's and building cool backend stuff.",
@@ -171,16 +172,37 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
           companies: {
             list: [
               {
+                key: "AWS",
+                companyTitle: "AWS",
+                duration: "May 2025 – Aug 2025",
+                role: "SDE Intern",
+                logo: "/images/work/aws.png",
+                link_company: "https://aws.amazon.com/",
+                projects: [
+                  {
+                    name: "Ergonomic Risk Assessment",
+                    description:
+                      "Incoming SDE Intern @AWS Fargate",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "AWS EC2, React.js, Flask",
+                  },
+                  
+                ],
+              },
+              {
                 key: "durandal",
                 companyTitle: "Durandal Lab, Rutgers University",
                 duration: "Jun 2024 – Aug 2024",
                 role: "Research Assistant",
                 logo: "/images/work/rutgers.png",
+                link_company: "https://www.rutgers.edu/",
                 projects: [
                   {
                     name: "Ergonomic Risk Assessment",
                     description:
-                      "Engineered a full‑stack image‑upload and processing pipeline on AWS EC2 using React.js & Flask. ",
+                      "Engineered a full-stack solution for uploading and storing over 500 images on AWS EC2, using React.js and Python Flask, optimizing the ergonomic assessment workflow. ",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -189,7 +211,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Vehicle Speed Estimation",
                     description:
-                      "Enhanced real‑time video streaming efficiency by 30% and reduced debugging time by 25% with AWS IVS.",
+                      "Enhanced video streaming efficiency by 30% and reduced debugging time by 25% using AWS IVS for vehicle speed estimation.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -203,11 +225,12 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                 duration: "Oct 2021 – Oct 2023",
                 role: "Lead Software Engineer",
                 logo: "/images/work/kh.png",
+                link_company: "https://konfhub.com/",
                 projects: [
                   {
                     name: "CertHub",
                     description:
-                      "Directed development of CertHub—enabled organizers to create custom feedback forms and analytics for 40k+ users.",
+                      "Directed the development of CertHub, a dynamic platform empowering event organizers to create customized feedback forms and providing in-depth analysis of user engagement metrics to drive data-informed decisions.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -216,7 +239,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Agile Team Leadership",
                     description:
-                      "Managed a 20+ member cross‑functional team, instituted Agile practices and CI/CD, cutting delivery time by 30%.",
+                      "Streamlined certificate creation for over 40k+ users by developing adaptable templates with flexible placeholders in CertHub using AWS DynamoDB and S3, enabling organizers to efficiently personalize certificates for their events.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -225,7 +248,16 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Women at KonfHub Initiative",
                     description:
-                      "Spearheaded interactive sessions promoting work‑life balance, improving team cohesion by 70%.",
+                      "Managed a team of 20+ cross-functional members, implementing Agile methodologies such as sprint retrospectives, task designation, and continuous integration to accelerate delivery timelines by 30% and foster high-quality output.",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "Eventbrite, Zoom",
+                  },
+                  {
+                    name: "Women at KonfHub Initiative",
+                    description:
+                      "Spearheaded the Women at KonfHub initiative by organizing interactive sessions and promoting work-life balance, which helped improve team cohesion by 70% during my tenure.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -239,11 +271,12 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                 duration: "Oct 2020 – Sep 2021",
                 role: "Software Engineer",
                 logo: "/images/work/kh.png",
+                link_company: "https://konfhub.com/",
                 projects: [
                   {
                     name: "Feature Development",
                     description:
-                      "Built 12+ front‑end features (tickets, sponsors, workshops, email templates), scaling platform to 300k+ users.",
+                      "Spearheaded a ground-up revamp of the KonfHub platform, delivering 12+ core features (flexible ticketing, coupon engine, automated settlements) that boosted operational efficiency and scaled the user base to 300K+.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -252,12 +285,36 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Contact Attendees Module",
                     description:
-                      "Engineered targeted messaging via AWS SNS/SQS/WhatsApp/SMS for 500+ events, improving communication efficiency.",
+                      "Architected and deployed high-throughput communication pipelines and real-time analytics dashboards using Python, React.js, TypeScript, Bootstrap, and AWS (Lambda, Step Functions, Event Bridge, API GateWay, Cognio, SNS, SQS, CloudWatch), supporting 500+ events for 100+ enterprise clients.",
                     cover: "",
                     media: "",
                     mediaType: "image",
                     techUsed: "AWS SNS, SQS, CloudWatch",
                   },
+                  {
+                    name: "Contact Attendees Module",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "AWS SNS, SQS, CloudWatch",
+                    "description": "Engineered a viral referral-contest feature and fully customizable event pages—integrated Stripe for seamless international payments—driving a 5x lift in sales and expanding global reach across multiple time zones."
+                  },
+                  {
+                    name: "Contact Attendees Module",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "AWS SNS, SQS, CloudWatch",
+                    description: "Championed Agile best practices by leading technical demos, sprint planning sessions, and cross-team syncs, removing blockers, accelerating delivery cadence, and ensuring 99.9% platform uptime."
+                  },
+                  {
+                    name: "Contact Attendees Module",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "AWS SNS, SQS, CloudWatch",
+                    description: "Mentored and coached junior engineers on scalable architecture, test-driven development, and code-review rigor, elevating team competency and consistently delivering high-quality releases."
+                  }
                 ],
               },
               {
@@ -266,11 +323,12 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                 duration: "Jan 2020 – Sep 2020",
                 role: "SDE Intern",
                 logo: "/images/work/kh.png",
+                link_company: "https://konfhub.com/",
                 projects: [
                   {
                     name: "Event Site Development",
                     description:
-                      "Built and maintained websites for 15+ events (100k+ registrations) collaborating with RedHat, GirlScript, Azure & AWS.",
+                      "Orchestrated the end-to-end design, development, and deployment of 16 high-traffic event websites on Microsoft Azure, RedHat, GirlScript, and AWS, ensuring enterprise-grade scalability and 99.9% uptime.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -279,12 +337,20 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "API Integration",
                     description:
-                      "Coded front‑end integrations for KonfHub event pages, ensuring reliable organizer workflows.",
+                      "Engineered responsive, user-centric interfaces that seamlessly handled 100K+ registrations, streamlining the onboarding flow and elevating attendee engagement.",
                     cover: "",
                     media: "",
                     mediaType: "image",
                     techUsed: "JavaScript, REST",
                   },
+                  {
+                    name: "API Integration",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "JavaScript, REST",
+                    description: "Collaborated with cross-functional teams (design, content, DevOps) to implement accessibility best practices, optimize performance, and leverage analytics insights—amplifying event visibility and conversion."
+                  }
                 ],
               },
               {
@@ -293,11 +359,12 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                 duration: "July 2019 – August 2019",
                 role: "SDE Intern",
                 logo: "/images/work/sedin.png",
+                link_company: "https://sedintechnologies.com/",
                 projects: [
                   {
                     name: "Event Site Development",
                     description:
-                      "Built and maintained websites for 15+ events (100k+ registrations) collaborating with RedHat, GirlScript, Azure & AWS.",
+                      "Architected and optimized reusable UI components with modern JavaScript frameworks, HTML5 and CSS3, driving consistency and slashing maintenance overhead.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -306,7 +373,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "API Integration",
                     description:
-                      "Coded front‑end integrations for KonfHub event pages, ensuring reliable organizer workflows.",
+                      "Orchestrated collaboration with product managers, QA testers and backend engineers to streamline Agile processes, accelerating feature delivery and boosting team efficiency.",
                     cover: "",
                     media: "",
                     mediaType: "image",

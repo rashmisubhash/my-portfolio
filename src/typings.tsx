@@ -56,22 +56,6 @@ export interface AboutSectionProps {
   timeline: { list: TimelineProps[] };
 }
 
-// export interface AboutSectionProps {
-//   aboutTitle: string;
-//   aboutSubline: string;
-//   skillGroups: {list: {categody: string; items: string[]}};
-//   skillsTitle: string;
-//   skillsSubline: string;
-//   skills: string;
-//   timelineTitle: string;
-//   mobileButtons: { list: { label: string; emoji: string }[] };
-//   story: {
-//     list: { title: string; content: string }[];
-//   };
-//   timeline: {
-//     list: TimelineProps[];
-//   };
-// }
 export interface TimelineProps {
   title: string;
   date: string;
@@ -79,6 +63,7 @@ export interface TimelineProps {
   image: string;
   alt: string;
   content: string;
+  link_company: string;
   type: "life" | "work" | "special";
 }
 
@@ -94,6 +79,7 @@ export interface CompaniesDataProps {
   duration?: string;
   role?: string;
   logo: string;
+  link_company: string;
   projects: ProjectsListProps[];
 }
 
