@@ -94,6 +94,7 @@ export interface ProjectDataProps {
   techUsed: string;
   externalLink?: string;
   githubLink?: string;
+  demoLink?: string;
 }
 
 export interface PreviousWorkSectionProps {

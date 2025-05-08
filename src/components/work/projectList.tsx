@@ -89,9 +89,9 @@ const ProjectList = ({ data, setSelectedProjectIndex }: ProjectListProps) => (
               <span>Docs</span>
             </a>
           )}
-          {isProject(item) && (item as ProjectDataProps).externalLink && (
+          {isProject(item) && (item as ProjectDataProps).demoLink && (
             <a
-              href={(item as ProjectDataProps).externalLink!}
+              href={(item as ProjectDataProps).demoLink!}
               onClick={() => setSelectedProjectIndex(idx)}
               target="_blank"
               rel="noopener noreferrer"

@@ -181,23 +181,26 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
               description:
                 "Where rides meet friendships! Share rides, save money, cut emissions, and connect with fellow students. Smarter, greener, and more fun—RU Ready to Carpool? ",
               cover: "/images/projects/rucarpooling.png",
-              externalLink: "https://rashmisubhash.hashnode.dev/building-a-real-time-carpooling-app-with-aws",
+              externalLink:
+                "https://rashmisubhash.hashnode.dev/building-a-real-time-carpooling-app-with-aws",
               keywords: "AWS",
             },
             {
               name: "A more advanced guide to the useState Hooks 🕕>🦸‍♀️",
               description:
-"Advanced topics, rules to follow, and avoiding mistakes when using the useState Hook.",
+                "Advanced topics, rules to follow, and avoiding mistakes when using the useState Hook.",
               cover: "/images/projects/usestate.png",
-              externalLink: "https://rashmisubhash.hashnode.dev/a-more-advanced-guide-to-the-usestate-hooks",
+              externalLink:
+                "https://rashmisubhash.hashnode.dev/a-more-advanced-guide-to-the-usestate-hooks",
               keywords: "React.js",
             },
             {
               name: "Complete beginner's guide on the useState Hooks 🕛>🦸‍♀️",
               description:
-"Beginner topics, rules to follow, and avoiding mistakes when using the useState Hook.",
+                "Beginner topics, rules to follow, and avoiding mistakes when using the useState Hook.",
               cover: "/images/projects/usestate.png",
-              externalLink: "https://rashmisubhash.hashnode.dev/complete-beginners-guide-on-the-usestate-hooks",
+              externalLink:
+                "https://rashmisubhash.hashnode.dev/complete-beginners-guide-on-the-usestate-hooks",
               keywords: "React.js",
             },
           ],
@@ -210,9 +213,10 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
               media: "",
               mediaType: "image",
               techUsed:
-                "AWS - CloudWatch, DynamoDB, Lambda, SES, API GateWay; Python, Boto3, FastAPI, Flutter, GENAI, Grow, OSRM, Serverless, Websockets",
+                "AWS, CloudWatch, DynamoDB, Lambda, SES, API GateWay, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Grow, OSRM, Serverless, Websockets",
               externalLink: "https://devpost.com/software/rucarpooling-yoet12",
               githubLink: "https://github.com/rashmisubhash/RUCarpooling",
+              demoLink: "https://vimeo.com/1054955277?share=copy",
             },
             {
               name: "EchoPod",
@@ -222,7 +226,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
               media: "",
               mediaType: "image",
               techUsed:
-                "AWS - CloudWatch, DynamoDB, Lambda, Bedrock, API GateWay, Step Functions; Python, Boto3, FastAPI, Flutter, GENAI, Claude, OSRM, Serverless, Websockets",
+                "AWS, CloudWatch, DynamoDB, Lambda, Bedrock, API GateWay, Step Functions, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Claude, Serverless, Websockets",
               externalLink: "https://devpost.com/software/echopod",
               githubLink: "https://github.com/rashmisubhash/RUCarpooling",
             },
@@ -234,9 +238,48 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
               media: "",
               mediaType: "image",
               techUsed:
-                "AWS - CloudWatch, DynamoDB, Lambda, Bedrock, API GateWay, Step Functions; Python, Boto3, FastAPI, Flutter, GENAI, Claude, OSRM, Serverless, Websockets",
+                "AWS, CloudWatch, DynamoDB, Lambda, Bedrock, API GateWay, Step Functions, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Claude, Serverless",
               externalLink: "https://devpost.com/software/streamstudy",
-              githubLink: "https://github.com/rashmisubhash/RUCarpooling",
+              githubLink: "https://github.com/aneesa2023/stream-study",
+              demoLink: "https://vimeo.com/1070829224?share=copy",
+            },
+            {
+              name: "LearnHub",
+              description:
+                "Smart Learning Paths in Seconds. Your personalized, AI-curated course builder with chapters, notes, and videos—tailored just for you.",
+              cover: "/images/projects/learnhub.png",
+              media: "",
+              mediaType: "image",
+              techUsed:
+                "AWS, CloudWatch, DynamoDB, Lambda, Bedrock, API GateWay, Step Functions, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Claude, Serverless",
+              externalLink: "https://devpost.com/software/learnhub-j0opiu",
+              githubLink: "https://github.com/aneesa2023/learnhub-backend",
+            },
+            {
+              name: "Mentor Bridge",
+              description:
+                "Mentorship reimagined for women in tech. AI that matches you with mentors who get your goals, your voice, and your journey.",
+              cover: "/images/projects/mentorbridge.png",
+              media: "",
+              mediaType: "image",
+              techUsed:
+                "AWS, CloudWatch, MongoDB, Lambda, API GateWay, Step Functions, authO, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Gemini, Serverless, Websockets",
+              externalLink: "https://devpost.com/software/mentor-bridge",
+              githubLink: "https://github.com/aneesa2023/mentor_bridge_backend",
+              demoLink: "https://vimeo.com/1075025617",
+            },
+            {
+              name: "Food Delivery App",
+              description:
+"Real-world application using Serverless to Build your own Serverless Food Delivery App in 3 hours!",
+              cover: "/images/projects/fooddel.png",
+              media: "",
+              mediaType: "image",
+              techUsed:
+                "AWS, CloudWatch, MongoDB, Lambda, API GateWay, Step Functions, Cognito, IAM, Python, Boto3, FastAPI, React, Serverless, Websockets",
+              externalLink: "https://srushithr.github.io/acd2022-serverless-workshop/",
+              githubLink: "https://github.com/SrushithR/acd2022-serverless-workshop?tab=readme-ov-file",
+              demoLink: "https://docs.google.com/presentation/d/19GNSGKPDX4rq1sOxp4P6fLkW9mBJ744N/edit?slide=id.g18eb3596b70_0_283#slide=id.g18eb3596b70_0_283",
             },
           ],
         },
