@@ -70,11 +70,23 @@ export default function AboutMe({ data }: { data: AboutSectionProps }) {
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           <p>
-            I’m <strong>Rashmi Subhash</strong>, a full-stack engineer with a passion for building serverless systems that scale effortlessly. Curious by nature and detail-oriented by habit, I dive deep into distributed architectures, optimize performance, and automate workflows to deliver reliable solutions.
+            I’m <strong>Rashmi Subhash</strong>, a full-stack & serverless engineer (4+ years) crafting event-driven platforms, distributed systems, and AI-powered features that scale effortlessly. I specialize in AWS architectures, performance optimization, and automation that transforms product ideas into reliable, production-ready solutions.
           </p>
-          <p>
+
+          <ul className="about__highlights" aria-label="Key achievements">
+        <li><strong>300k+ users</strong> supported across <strong>500+ global events</strong></li>
+        <li><strong>5× growth</strong> from feature revamps and real-time analytics</li>
+        <li><strong>30% faster</strong> delivery with CI/CD and infrastructure-as-code</li>
+      </ul>
+       <p>
+        Recently, I’ve shipped <strong>LLM-backed agents</strong> with Amazon Bedrock and
+        <strong>real-time voice experiences</strong> using Transcribe &amp; Polly, adding personalization
+        and faster feedback loops to apps. I mentor engineers, speak at AWS community events,
+        and champion women in tech.
+      </p>
+          {/* <p>
             My journey began experimenting with simple APIs, today I architect complex data pipelines on AWS, mentor emerging developers, and speak on topics ranging from Lambda best practices to cloud-native design. As a champion for women in tech, I strive to create inclusive environments through mentorship and community events.
-          </p>
+          </p> */}
         </motion.div>
 
         {/* My Approach */}
@@ -89,10 +101,10 @@ export default function AboutMe({ data }: { data: AboutSectionProps }) {
             className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700"
           >
             {[
-              { icon: <Search className="h-6 w-6 text-purple-500" />, text: "Understand the problem before writing a single line of code." },
-              { icon: <FileText className="h-6 w-6 text-purple-500" />, text: "Design APIs that are intuitive, documented, and testable." },
-              { icon: <Zap className="h-6 w-6 text-purple-500" />, text: "Leverage automation & infrastructure-as-code for reliability." },
-              { icon: <RefreshCw className="h-6 w-6 text-purple-500" />, text: "Iterate quickly based on feedback and metrics." }
+              { icon: <Search className="h-6 w-6 text-purple-500" />, text: "🔍 Understand the problem before writing a single line of code." },
+              { icon: <FileText className="h-6 w-6 text-purple-500" />, text: "📝 Design APIs that are intuitive, documented, and testable." },
+              { icon: <Zap className="h-6 w-6 text-purple-500" />, text: "⚡ Leverage automation & infrastructure-as-code for reliability." },
+              { icon: <RefreshCw className="h-6 w-6 text-purple-500" />, text: " 🔄Iterate quickly based on feedback and metrics." }
             ].map((item, i) => (
               <motion.li
                 key={i}

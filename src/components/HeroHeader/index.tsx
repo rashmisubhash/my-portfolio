@@ -96,7 +96,7 @@ export default function Hero() {
               {
                 Icon: Trophy,
                 label: "Hackathons",
-                text: "2+ award-winning prototypes",
+                text: "5+ award-winning prototypes",
               },
               {
                 Icon: UserPlus,

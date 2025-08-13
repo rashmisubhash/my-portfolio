@@ -17,6 +17,9 @@ const Contact = dynamic(() => import("../components/contact"), {
 const Footer = dynamic(() => import("../components/footer"), {
   ssr: false,
 });
+const Header = dynamic(() => import("../components/header"), {
+  ssr: false,
+});
 
 const HeroHeader = dynamic(() => import("../components/HeroHeader"), {
   ssr: false,
@@ -43,6 +46,7 @@ export default async function Home() {
 
   return (
     <LoadingWrapper>
+      <Header />
       {/* <NavBar data={navigation} /> */}
       <HeroHeader />
       <AboutMe data={about} />
@@ -63,8 +67,8 @@ export default async function Home() {
       {/* <Hero data={hero} /> */}
       
       {/* <Work data={previousWork} />
-      <Contact data={contact} />
-      <Footer data={footer} /> */}
+      <Contact data={contact} /> */}
+      <Footer data={footer} />
     </LoadingWrapper>
   );
 }

@@ -206,6 +206,19 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
           ],
           projects: [
             {
+              name: "Swift AI Aid",
+              description:
+              "Emergency response reimagined. SwiftAid connects users to nearby help during emergencies with real-time location sharing, instant alerts, and community-driven assistance.",
+              cover: "/images/projects/swiftaid.png",
+              media: "",
+              mediaType: "image",
+              techUsed:
+                "AWS, Bedrock, Lambda, Connect, Transcribe, Kinesis, Comprehend, Python, Boto3, FastAPI, Flutter, GENAI, Anthropic, Claude, Serverless, Websockets",
+              externalLink: "https://devpost.com/software/swiftaid-zd3y6k",
+              githubLink: "https://github.com/rashmisubhash/swift-aid-backend",
+              demoLink: "https://majestic-cajeta-15bf7d.netlify.app",
+            },
+            {
               name: "RUCarpooling",
               description:
                 "Where rides meet friendships! Share rides, save money, cut emissions, and connect with fellow students. Smarter, greener, and more fun—RU Ready to Carpool? ",
@@ -213,7 +226,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
               media: "",
               mediaType: "image",
               techUsed:
-                "AWS, CloudWatch, DynamoDB, Lambda, SES, API GateWay, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Grow, OSRM, Serverless, Websockets",
+                "AWS, CloudWatch, DynamoDB, Lambda, SES, API GateWay, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Anthropic, Claude, OSRM, Serverless, Websockets",
               externalLink: "https://devpost.com/software/rucarpooling-yoet12",
               githubLink: "https://github.com/rashmisubhash/RUCarpooling",
               demoLink: "https://vimeo.com/1054955277?share=copy",
@@ -226,7 +239,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
               media: "",
               mediaType: "image",
               techUsed:
-                "AWS, CloudWatch, DynamoDB, Lambda, Bedrock, API GateWay, Step Functions, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Claude, Serverless, Websockets",
+                "AWS, Bedrock, CloudWatch, DynamoDB, Lambda, API GateWay, Step Functions, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Anthropic, Claude, Serverless, Websockets",
               externalLink: "https://devpost.com/software/echopod",
               githubLink: "https://github.com/rashmisubhash/RUCarpooling",
             },
@@ -251,7 +264,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
               media: "",
               mediaType: "image",
               techUsed:
-                "AWS, CloudWatch, DynamoDB, Lambda, Bedrock, API GateWay, Step Functions, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Claude, Serverless",
+                "AWS, Bedrock, CloudWatch, DynamoDB, Lambda, API GateWay, Step Functions, Cognito, IAM, Python, Boto3, FastAPI, Flutter, GENAI, Claude, Serverless",
               externalLink: "https://devpost.com/software/learnhub-j0opiu",
               githubLink: "https://github.com/aneesa2023/learnhub-backend",
             },
@@ -271,15 +284,18 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
             {
               name: "Food Delivery App",
               description:
-"Real-world application using Serverless to Build your own Serverless Food Delivery App in 3 hours!",
+                "Real-world application using Serverless to Build your own Serverless Food Delivery App in 3 hours!",
               cover: "/images/projects/fooddel.png",
               media: "",
               mediaType: "image",
               techUsed:
                 "AWS, CloudWatch, MongoDB, Lambda, API GateWay, Step Functions, Cognito, IAM, Python, Boto3, FastAPI, React, Serverless, Websockets",
-              externalLink: "https://srushithr.github.io/acd2022-serverless-workshop/",
-              githubLink: "https://github.com/SrushithR/acd2022-serverless-workshop?tab=readme-ov-file",
-              demoLink: "https://docs.google.com/presentation/d/19GNSGKPDX4rq1sOxp4P6fLkW9mBJ744N/edit?slide=id.g18eb3596b70_0_283#slide=id.g18eb3596b70_0_283",
+              externalLink:
+                "https://srushithr.github.io/acd2022-serverless-workshop/",
+              githubLink:
+                "https://github.com/SrushithR/acd2022-serverless-workshop?tab=readme-ov-file",
+              demoLink:
+                "https://docs.google.com/presentation/d/19GNSGKPDX4rq1sOxp4P6fLkW9mBJ744N/edit?slide=id.g18eb3596b70_0_283#slide=id.g18eb3596b70_0_283",
             },
           ],
         },
@@ -298,7 +314,35 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                 projects: [
                   {
                     name: "Ergonomic Risk Assessment",
-                    description: "Incoming SDE Intern @AWS Fargate",
+                    description:
+                      "Built real-time CloudTrail monitoring and automatic escalation for 35K+ APIs, cutting incident response latency by 80%.",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "AWS EC2, React.js, Flask",
+                  },
+                  {
+                    name: "Ergonomic Risk Assessment",
+                    description:
+                      "Cut investigation time from 30 to 10 days by deploying a serverless root-cause pipeline across 354 AWS services.",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "AWS EC2, React.js, Flask",
+                  },
+                  {
+                    name: "Ergonomic Risk Assessment",
+                    description:
+                      "Launched automated monthly compliance reporting via EventBridge workflows, reducing review from 40 to 2 hours.",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "AWS EC2, React.js, Flask",
+                  },
+                  {
+                    name: "Ergonomic Risk Assessment",
+                    description:
+                      "Migrated off legacy platform by creating integration guides and using Bedrock LLM on 8K+ tickets for smoother handoffs.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -317,7 +361,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Ergonomic Risk Assessment",
                     description:
-                      "Engineered a full-stack solution for uploading and storing over 500 images on AWS EC2, using React.js and Python Flask, optimizing the ergonomic assessment workflow. ",
+                      "Streamlined a Flask service for risk assessment by processing over 500 images daily, reduced manual review time by 60%",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -326,18 +370,28 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Vehicle Speed Estimation",
                     description:
-                      "Enhanced video streaming efficiency by 30% and reduced debugging time by 25% using AWS IVS for vehicle speed estimation.",
+                      "Deployed a real-time highly-scalable solution to estimate the speed of the vehicle with AWS IVS, increasing throughput 30%.",
                     cover: "",
                     media: "",
                     mediaType: "image",
                     techUsed: "AWS IVS",
                   },
+                  {
+                    name: "Vehicle Speed Estimation",
+                    description:
+                      "Orchestrated ML inference on EC2, optimizing frontend-to-model flow and reducing latency 40%.",
+                    cover: "",
+                    media: "",
+                    mediaType: "image",
+                    techUsed: "AWS IVS",
+                  },
+                  
                 ],
               },
               {
                 key: "konfhub-lead",
                 companyTitle: "KonfHub Technologies LLP",
-                duration: "Oct 2021 – Oct 2023",
+                duration: "Jan 2020 – Oct 2023",
                 role: "Lead Software Engineer",
                 logo: "/images/work/kh.png",
                 link_company: "https://konfhub.com/",
@@ -345,7 +399,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "CertHub",
                     description:
-                      "Directed the development of CertHub, a dynamic platform empowering event organizers to create customized feedback forms and providing in-depth analysis of user engagement metrics to drive data informed decisions.",
+                      "Spearheaded end-to-end platform revamp, launching 12+ features that scaled user engagement to over 300K participants.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -354,7 +408,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Agile Team Leadership",
                     description:
-                      "Streamlined certificate creation for over 40k+ users by developing adaptable templates with flexible placeholders in CertHub using AWS DynamoDB and S3, enabling organizers to efficiently personalize certificates for their events.",
+                      "Architected a referral system with Stripe payments and real-time leaderboards, driving a 5x increase in event registrations.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -363,7 +417,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Women at KonfHub Initiative",
                     description:
-                      "Managed a team of 20+ cross-functional members, implementing Agile methodologies such as sprint retrospectives, task designation, and continuous integration to accelerate delivery timelines by 30% and foster high quality output.",
+                      "Led Agile delivery for a 20-person team, increasing sprint velocity 30% and accelerating release cadence.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -372,7 +426,7 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   {
                     name: "Women at KonfHub Initiative",
                     description:
-                      "Spearheaded the Women at KonfHub initiative by organizing interactive sessions and promoting work life balance, which helped improve team cohesion by 70% during my tenure.",
+                      "Scaled backend event infrastructure to support 1,200+ global events with zero downtime during rollout.",
                     cover: "",
                     media: "",
                     mediaType: "image",
@@ -380,98 +434,8 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
                   },
                 ],
               },
-              {
-                key: "konfhub-eng",
-                companyTitle: "KonfHub Technologies LLP",
-                duration: "Oct 2020 – Sep 2021",
-                role: "Software Engineer",
-                logo: "/images/work/kh.png",
-                link_company: "https://konfhub.com/",
-                projects: [
-                  {
-                    name: "Feature Development",
-                    description:
-                      "Spearheaded a ground-up revamp of the KonfHub platform, delivering 12+ core features (flexible ticketing, coupon engine, automated settlements) that boosted operational efficiency and scaled the user base to 300K+.",
-                    cover: "",
-                    media: "",
-                    mediaType: "image",
-                    techUsed: "React.js, TypeScript",
-                  },
-                  {
-                    name: "Contact Attendees Module",
-                    description:
-                      "Architected and deployed high throughput communication pipelines and real-time analytics dashboards using Python, React.js, TypeScript, Bootstrap, and AWS (Lambda, Step Functions, Event Bridge, API GateWay, Cognio, SNS, SQS, CloudWatch), supporting 500+ events for 100+ enterprise clients.",
-                    cover: "",
-                    media: "",
-                    mediaType: "image",
-                    techUsed: "AWS SNS, SQS, CloudWatch",
-                  },
-                  {
-                    name: "Contact Attendees Module",
-                    cover: "",
-                    media: "",
-                    mediaType: "image",
-                    techUsed: "AWS SNS, SQS, CloudWatch",
-                    description:
-                      "Engineered a viral referral contest feature and fully customizable event pages integrated Stripe for seamless international payments driving a 5x lift in sales and expanding global reach across multiple time zones.",
-                  },
-                  {
-                    name: "Contact Attendees Module",
-                    cover: "",
-                    media: "",
-                    mediaType: "image",
-                    techUsed: "AWS SNS, SQS, CloudWatch",
-                    description:
-                      "Championed Agile best practices by leading technical demos, sprint planning sessions, and cross-team syncs, removing blockers, accelerating delivery cadence, and ensuring 99.9% platform uptime.",
-                  },
-                  {
-                    name: "Contact Attendees Module",
-                    cover: "",
-                    media: "",
-                    mediaType: "image",
-                    techUsed: "AWS SNS, SQS, CloudWatch",
-                    description:
-                      "Mentored and coached junior engineers on scalable architecture, test driven development, and code review rigor, elevating team competency and consistently delivering high-quality releases.",
-                  },
-                ],
-              },
-              {
-                key: "konfhub-intern",
-                companyTitle: "KonfHub Technologies LLP",
-                duration: "Jan 2020 – Sep 2020",
-                role: "SDE Intern",
-                logo: "/images/work/kh.png",
-                link_company: "https://konfhub.com/",
-                projects: [
-                  {
-                    name: "Event Site Development",
-                    description:
-                      "Orchestrated the end-to-end design, development, and deployment of 16 high traffic event websites on Microsoft Azure, RedHat, GirlScript, and AWS, ensuring enterprise grade scalability and 99.9% uptime.",
-                    cover: "",
-                    media: "",
-                    mediaType: "image",
-                    techUsed: "HTML, CSS, AWS",
-                  },
-                  {
-                    name: "API Integration",
-                    description:
-                      "Engineered responsive, user centric interfaces that seamlessly handled 100K+ registrations, streamlining the onboarding flow and elevating attendee engagement.",
-                    cover: "",
-                    media: "",
-                    mediaType: "image",
-                    techUsed: "JavaScript, REST",
-                  },
-                  {
-                    name: "API Integration",
-                    cover: "",
-                    media: "",
-                    mediaType: "image",
-                    techUsed: "JavaScript, REST",
-                    description:
-                      "Collaborated with cross-functional teams (design, content, DevOps) to implement accessibility best practices, optimize performance, and leverage analytics insights amplifying event visibility and conversion.",
-                  },
-                ],
-              },
+              
+              
               {
                 key: "sedin-intern",
                 companyTitle: "Sedin Technologies LLP",
@@ -508,8 +472,8 @@ const getCopyData = async (): Promise<ReturnedResponse> => {
           list: [],
         },
         footer: {
-          copyright: "© 2025 Rashmi Subhash",
-          attributions: "Built with ❤️ using Next.js + Tailwind",
+          copyright: "© 2025 Rashmi Birur Subhash. All rights reserved.",
+          attributions: "Made with ❤️ by Rashmi",
           links: {
             list: [],
           },
