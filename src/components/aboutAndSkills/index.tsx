@@ -138,21 +138,6 @@ export default function AboutMe({ data }: { data: AboutSectionProps }) {
             ))}
           </motion.div>
         </div>
-
-        {/* Call to Action */}
-        <motion.div
-          className="text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.6 }}
-        >
-          <a
-            href="#contact"
-            className="inline-block px-8 py-4 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition"
-          >
-            Let’s Chat
-          </a>
-        </motion.div>
       </div>
     </section>
   );
