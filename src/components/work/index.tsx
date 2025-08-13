@@ -38,6 +38,7 @@ const Work = ({ data }: { data: ProjectsAndBlogsProps }) => {
 
   return (
     <section
+    id="projects"
     className="relative py-24 bg-[#D8CEE9] overflow-hidden"
     style={{
       backgroundImage:

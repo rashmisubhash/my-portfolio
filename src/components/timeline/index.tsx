@@ -26,6 +26,7 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
 
   return (
     <section
+      id="experience"
       className="relative w-full overflow-hidden bg-[#D8CEE9]"
       style={{
         backgroundImage:

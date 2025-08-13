@@ -101,10 +101,10 @@ export default function AboutMe({ data }: { data: AboutSectionProps }) {
             className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700"
           >
             {[
-              { icon: <Search className="h-6 w-6 text-purple-500" />, text: "🔍 Understand the problem before writing a single line of code." },
-              { icon: <FileText className="h-6 w-6 text-purple-500" />, text: "📝 Design APIs that are intuitive, documented, and testable." },
-              { icon: <Zap className="h-6 w-6 text-purple-500" />, text: "⚡ Leverage automation & infrastructure-as-code for reliability." },
-              { icon: <RefreshCw className="h-6 w-6 text-purple-500" />, text: " 🔄Iterate quickly based on feedback and metrics." }
+              { icon: <Search className="h-6 w-6 text-purple-500" />, text: "Understand the problem before writing a single line of code." },
+              { icon: <FileText className="h-6 w-6 text-purple-500" />, text: "Design APIs that are intuitive, documented, and testable." },
+              { icon: <Zap className="h-6 w-6 text-purple-500" />, text: "Leverage automation & infrastructure-as-code for reliability." },
+              { icon: <RefreshCw className="h-6 w-6 text-purple-500" />, text: "Iterate quickly based on feedback and metrics." }
             ].map((item, i) => (
               <motion.li
                 key={i}
