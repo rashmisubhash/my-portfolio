@@ -78,12 +78,16 @@ export default function AboutMe({ data }: { data: AboutSectionProps }) {
         <li><strong>5× growth</strong> from feature revamps and real-time analytics</li>
         <li><strong>30% faster</strong> delivery with CI/CD and infrastructure-as-code</li>
       </ul>
-       <p>
-        Recently, I’ve shipped <strong>LLM-backed agents</strong> with Amazon Bedrock and
+      <p>
+I specialize in building <strong>GenAI-driven systems</strong> — from <strong>LLM-backed agents</strong> with <strong>Amazon Bedrock</strong> and <strong>Anthropic Claude</strong> to <strong>real-time voice experiences</strong> powered by <strong>Transcribe</strong> and <strong>Polly</strong>. My focus is on <strong>integrating large language models</strong> into production apps with <strong>personalization</strong> and <strong>rapid feedback loops</strong>.
+Beyond hands-on engineering, I <strong>mentor developers</strong>, <strong>speak at AWS community events</strong>, and <strong>champion women in tech</strong>.
+</p>
+
+        {/* Recently, I’ve shipped <strong>LLM-backed agents</strong> with Amazon Bedrock and
         <strong>real-time voice experiences</strong> using Transcribe &amp; Polly, adding personalization
         and faster feedback loops to apps. I mentor engineers, speak at AWS community events,
         and champion women in tech.
-      </p>
+      </p> */}
           {/* <p>
             My journey began experimenting with simple APIs, today I architect complex data pipelines on AWS, mentor emerging developers, and speak on topics ranging from Lambda best practices to cloud-native design. As a champion for women in tech, I strive to create inclusive environments through mentorship and community events.
           </p> */}

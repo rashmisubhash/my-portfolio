@@ -46,8 +46,8 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
           My journey over the years!!
         </p>
 
-        {/* Timeline bar */}
-        <div className="relative pt-6 mb-16">
+        {/* Timeline bar - Desktop */}
+        <div className="hidden md:block relative pt-6 mb-16">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full h-1 bg-black rounded-full" />
           </div>
@@ -108,6 +108,63 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
                 </motion.button>
               );
             })}
+          </div>
+        </div>
+
+        {/* Timeline navigation - Mobile */}
+        <div className="md:hidden mb-8">
+          <div className="flex justify-center space-x-3 mb-6">
+            {items.map((item, idx) => (
+              <button
+                key={idx}
+                onClick={() => setSelectedIndex(idx)}
+                className={`w-12 h-12 flex items-center justify-center rounded-full transition-all ${
+                  idx === selectedIndex 
+                    ? 'ring-2 ring-purple-500 shadow-md scale-110' 
+                    : 'opacity-60 scale-90'
+                } ${
+                  item.company === 'AWS' ? 'bg-black' : 'bg-white'
+                }`}
+              >
+                {item.iconUrl || item.logo ? (
+                  <Image
+                    src={item.iconUrl || item.logo!}
+                    alt={item.company}
+                    width={24}
+                    height={24}
+                    className={idx === selectedIndex ? '' : 'opacity-50'}
+                  />
+                ) : (
+                  <span className={`block w-4 h-4 rounded-full ${
+                    idx === selectedIndex ? 'bg-purple-500' : 'bg-gray-400'
+                  }`} />
+                )}
+              </button>
+            ))}
+          </div>
+          <div className="flex justify-between items-center px-4">
+            <button
+              onClick={() => setSelectedIndex(Math.max(0, selectedIndex - 1))}
+              disabled={selectedIndex === 0}
+              className="p-3 rounded-full bg-white shadow-md disabled:opacity-50 disabled:cursor-not-allowed text-lg"
+            >
+              ←
+            </button>
+            <div className="text-center">
+              <div className="text-sm font-medium text-gray-700">
+                {items[selectedIndex].date}
+              </div>
+              <div className="text-xs text-gray-500">
+                {selectedIndex + 1} of {items.length}
+              </div>
+            </div>
+            <button
+              onClick={() => setSelectedIndex(Math.min(items.length - 1, selectedIndex + 1))}
+              disabled={selectedIndex === items.length - 1}
+              className="p-3 rounded-full bg-white shadow-md disabled:opacity-50 disabled:cursor-not-allowed text-lg"
+            >
+              →
+            </button>
           </div>
         </div>
 
