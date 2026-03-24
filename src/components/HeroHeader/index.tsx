@@ -6,7 +6,7 @@ import {
   PenTool,
   Server,
   Users,
-  Notebook,
+  Brain,
   Trophy,
   UserPlus,
 } from "lucide-react";
@@ -15,7 +15,7 @@ import myselfWink from "/public/images/hero/image.png";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-purple-300 to-purple-600">
+    <section className="relative overflow-hidden bg-gradient-to-br from-purple-600 to-purple-900">
       {/* Morphing background blobs */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-pink-400 opacity-20 rounded-full animate-blob1 mix-blend-multiply" />
       <div className="absolute -bottom-40 right-0 w-80 h-80 bg-indigo-500 opacity-20 rounded-full animate-blob2 mix-blend-multiply" />
@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-lg max-w-2xl text-[rgba(255,255,255,0.85)]"
           >
-            Crafting scalable web platforms & empowering future engineers
+            Building production AI systems — from customer problem to shipped product
           </motion.p>
 
           {/* Stats */}
@@ -89,9 +89,9 @@ export default function Hero() {
                 text: "Guided 80+ students",
               },
               {
-                Icon: Notebook,
-                label: "Blogger",
-                text: "Monthly technical blogs",
+                Icon: Brain,
+                label: "AI Systems",
+                text: "LLM pipelines, RAG & structured outputs",
               },
               {
                 Icon: Trophy,
